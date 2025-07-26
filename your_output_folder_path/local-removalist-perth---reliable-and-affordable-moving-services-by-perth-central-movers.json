@@ -1,0 +1,51 @@
+{
+  "services": [
+    {
+      "title": "Transparent Pricing with No Hidden Fees",
+      "description": "Moving can be financially daunting, which is why we prioritise transparency and honesty in our pricing. Before the move, we provide you with a comprehensive, itemised quote that clearly outlines all costs, so you know exactly what to expect. We don’t charge extra for things like stairs, packing materials, or extended hours, and there are no hidden fees to catch you off guard. Our competitive rates reflect the premium quality of service and professionalism we deliver.",
+      "image": "images/ic1.webp"
+    },
+    {
+      "title": "Modern Equipment and Well-Maintained Vehicles",
+      "description": "To provide safe and efficient moves, we use a modern fleet of trucks equipped with the latest tools and safety features. Our vehicles come with padded floors, lift gates, secure strapping systems, and trolleys designed to protect your items and make the moving process faster and smoother. Whether maneuvering through Perth’s narrow streets or transporting heavy furniture, our equipment enables us to work effectively without compromising on safety or care.",
+      "image": "images/ic2.webp"
+    },
+    {
+      "title": "Flexible Scheduling to Suit Your Lifestyle",
+      "description": "We understand that timing is critical, especially when juggling work, family, or business operations. That’s why we offer flexible scheduling options designed to fit your lifestyle and commitments. Whether you need us to move you early in the morning, late at night, on weekends, or even public holidays, we will accommodate your preferences to ensure your move causes minimal disruption to your daily routine.",
+      "image": "images/ic3.webp"
+    },
+    {
+      "title": "Comprehensive Services from Start to Finish",
+      "description": "Moving involves many steps beyond just transporting boxes. Perth Central Movers offers a full suite of services to cover every aspect of your relocation. From professional packing and unpacking services to furniture disassembly and reassembly, we aim to ease your workload and streamline the entire process. We can also assist with storage solutions if you need to temporarily house your belongings, making your move as hassle-free as possible.",
+      "image": "images/ic4.webp"
+    },
+    {
+      "title": "Commitment to Safety and the Protection of Your Belongings",
+      "description": "We know that your possessions hold both financial and sentimental value. Our team takes the utmost care in packing, loading, and unloading to prevent damage during transit. We use premium packing materials and secure handling techniques, ensuring fragile and valuable items receive special attention. Our removalists are also trained in safe lifting practices to protect your belongings, your property, and themselves from injury or damage.",
+      "image": "images/ic5.webp"
+    },
+    {
+      "title": "Outstanding Customer Support and Transparent Communication",
+      "description": "From your first inquiry through to the final delivery, Perth Central Movers prides itself on delivering exceptional customer service. We maintain open and clear communication at every stage of your move, keeping you updated and informed. Our friendly and responsive team is always ready to answer your questions, provide advice, and address any concerns, ensuring you feel supported throughout your moving journey.",
+      "image": "images/ic6.webp"
+    },
+    {
+      "title": "Locally Owned and Operated with Deep Perth Knowledge",
+      "description": "As a proud Perth-based business, we possess in-depth knowledge of the city’s diverse suburbs, road networks, and regulations. This local insight allows us to plan efficient routes and anticipate local access restrictions, ensuring your move is executed flawlessly. Our commitment to the community means we strive to build lasting relationships based on trust, respect, and quality service.",
+      "image": "images/ic7.webp"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Environmentally Conscious Moving Practices",
+      "answer": "We also take our environmental responsibility seriously. Wherever possible, we use eco-friendly packing materials and implement sustainable practices to reduce waste. Our fleet is regularly maintained for optimal fuel efficiency, helping us minimise our carbon footprint while providing you with top-tier moving services."
+    }
+  ],
+  "about": [
+    {
+      "title": "Experienced and Skilled Team",
+      "description": "Our removalists bring years of combined experience in managing local moves across Perth, handling a diverse range of properties including apartments, houses, offices, and commercial premises. Every team member is fully trained in the latest packing, lifting, and moving techniques, ensuring that your possessions, from delicate heirlooms to bulky furniture, are treated with the utmost care. Our expertise allows us to anticipate potential challenges and tackle them proactively, guaranteeing your items arrive safely and on schedule."
+    }
+  ]
+}

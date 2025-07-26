@@ -37,7 +37,7 @@
         <span>${item.question}</span>
         <span class="text-green-600 text-xl font-bold">+</span>
       </div>
-      <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-sm text-gray-600 mt-2">
+      <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-sm mt-2">
         ${item.answer}
       </div>
     `;

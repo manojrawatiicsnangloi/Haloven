@@ -1,0 +1,51 @@
+{
+  "services": [
+    {
+      "title": "Complete, Turnkey Project Management",
+      "description": "Every hotel move requires coordination between multiple departments, contractors, and schedules. Our dedicated project managers serve as your single point of contact, handling everything from timelines and access planning to team coordination and on-site supervision. We map out every detail from disassembly to delivery and provide detailed inventories and progress updates to ensure transparency and peace of mind.",
+      "image": "images/ic1.webp"
+    },
+    {
+      "title": "Highly Trained, Professional Crew",
+      "description": "Our team isn’t just trained in moving; they’re trained in customer-facing, service-oriented environments. We select professionals who exhibit a high level of courtesy, punctuality, and efficiency. Whether we’re navigating a service elevator or working near occupied rooms, our crew behaves with respect, confidentiality, and awareness of your hotel’s brand standards.",
+      "image": "images/ic2.webp"
+    },
+    {
+      "title": "Specialist Equipment for Hospitality Assets",
+      "description": "From large reception counters and ergonomic seating to back-of-house industrial equipment, hotel removals involve a diverse range of assets. We come prepared with the right tools and equipment such as trolleys, dollies, padded wraps, straps, and lift gates—to protect and secure everything during loading, transport, and unloading. We also use climate-controlled trucks and soft-pack interiors when necessary to ensure added safety for sensitive or high-end furnishings.",
+      "image": "images/ic3.webp"
+    },
+    {
+      "title": "Secure Handling of High-Value Items",
+      "description": "Hotels often house premium assets such as custom-made furniture, curated artwork, chandeliers, AV setups, and imported décor. These items demand more than just careful lifting they require strategic packing, crating, and climate-controlled handling. Our team uses protective padding, shock-absorbing packaging, and custom-built crates to move your valuable inventory securely and without damage.",
+      "image": "images/ic4.webp"
+    },
+    {
+      "title": "Comprehensive Insurance for Total Peace of Mind",
+      "description": "Accidents are rare, but precautions are essential. Perth Central Movers is fully insured, offering both public liability and goods-in-transit coverage. Should anything unexpected occur, your assets are protected, giving you confidence to move forward without worry.",
+      "image": "images/ic5.webp"
+    },
+    {
+      "title": "Full Compliance and Safety Protocols",
+      "description": "We operate in accordance with all local council regulations, fire safety guidelines, and OH&S standards. We’re well-versed in working within commercial building policies and can obtain necessary permits or coordinate access with building management. Safety—for your guests, your team, and our movers is always our top priority.",
+      "image": "images/ic6.webp"
+    },
+    {
+      "title": "Proven Track Record in Perth’s Hospitality Sector",
+      "description": "We’ve completed relocation projects for some of Perth’s most well-known hospitality brands, earning a reputation for dependability, quality, and exceptional customer service. Many of our clients return to us for ongoing support, whether it's seasonal upgrades, refurbishments, or expansion projects. With Perth Central Movers, you're not just getting a moving company; you’re gaining a strategic relocation partner who understands your business.",
+      "image": "images/ic7.webp"
+    },
+    {
+      "title": "FAQ – Hotel Removalist Services in Perth",
+      "description": "Q1: What types of hotels and hospitality venues do you work with?\n We have experience working with a wide variety of hospitality venues, including boutique hotels, large resorts, serviced apartments, conference centres, motels, and boutique lodges. No matter the size or complexity, we tailor our approach to meet your specific needs. Q2: How do you minimise disruption to hotel guests during a move or renovation?\n We coordinate closely with your management team to schedule moves during low occupancy periods, after hours, overnight, or on weekends. Our teams work discreetly and efficiently, respecting noise and cleanliness standards to ensure your guests experience minimal disruption. Q3: Can you handle moving specialty hotel equipment such as kitchen appliances or AV systems?\n Yes, we specialise in relocating all types of hotel assets, including commercial kitchen equipment, bar systems, audiovisual gear, IT infrastructure, artwork, and furniture. Our trained staff use specialised equipment and handling procedures to protect delicate and high-value items. Q4: Do you offer services beyond just moving furniture?\n Absolutely. Our hotel removalist services include disassembly and reassembly of furniture and fixtures, packing and unpacking, inventory management, waste removal, and even short or long-term storage solutions as needed during renovations or staged moves. Q5: Are you licensed and insured for commercial moves?\n Yes, Perth Central Movers is fully licensed and insured. We hold comprehensive public liability and goods-in-transit insurance to protect your property throughout the moving process. Q7: What measures do you take to protect hotel property and interiors?\n Our movers use high-quality padding, protective blankets, straps, and covers to safeguard furniture, walls, and floors. We also carefully navigate tight spaces and use equipment designed to prevent damage during loading and unloading. Q8: Can you move hotels that are still operational and have guests checked in?\n Yes, we specialise in moves that take place while hotels remain operational. We work discreetly and schedule around peak hours and guest activities to minimise interference with daily operations. Q9: Do you provide custom crating or packaging for fragile or high-value items?\n Yes, we offer custom crating and specialised packing solutions for delicate or valuable assets such as artwork, chandeliers, antiques, and electronics to ensure maximum protection. Q10: What if there is damage or loss during the move?\n While we take every precaution to avoid incidents, in the rare event of damage or loss, our comprehensive insurance covers your belongings. We work quickly to resolve any issues with transparency and professionalism. Q11: Do you provide after-hours or weekend moving services?\n Yes, to accommodate the unique needs of hospitality venues, we offer flexible scheduling options including nights, weekends, and public holidays. Q12: How do you ensure the move aligns with our hotel’s operational requirements?\n We conduct detailed pre-move consultations to understand your operational calendar, access restrictions, and specific needs. Our project managers coordinate closely with your team to create a tailored moving plan that integrates smoothly with your hotel’s workflow. Q13: Can you handle moves across multiple hotel locations or stages?\n Yes, we are equipped to manage complex, multi-site, or phased relocations with detailed inventory tracking and scheduling to ensure each stage is executed flawlessly. Q14: Do you assist with the setup or installation after delivery?\n Yes, our service includes furniture reassembly and placement according to your floorplans, helping you get back to full operation as quickly as possible.",
+      "image": "images/ic8.webp"
+    }
+  ],
+  "faq": [],
+  "about": [
+    {
+      "title": "Deep Expertise in Hotel and Hospitality Logistics",
+      "description": "Relocating or renovating a hotel requires more than just manpower;e; it demands detailed planning, industry-specific knowledge, and flawless execution. At Perth Central Movers, we bring all of these together to deliver exceptional hotel removalist services that minimise disruption and maximise efficiency. With years of experience in the hospitality relocation space, we understand the stakes involved in keeping your operations smooth and your guest experience uninterrupted. Here’s what sets us apart: Our team has extensive experience handling removals for a wide range of hospitality venues from luxury boutique hotels and branded resort chains to serviced apartments, hostels, and conference centres. We understand the operational sensitivities of hotel environments, including how to work around check-in schedules, guest privacy, restricted-access areas, and building-specific protocols. Our familiarity with hospitality standards allows us to plan and execute complex moves with precision."
+    }
+  ]
+}

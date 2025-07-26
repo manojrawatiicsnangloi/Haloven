@@ -1,0 +1,76 @@
+{
+  "services": [
+    {
+      "title": "Highly Trained and Professional Moving Team",
+      "description": "Our removalists are more than just movers they are skilled professionals trained in the latest handling techniques and customer service standards. We treat your office assets, from furniture to sensitive documents and expensive electronics, with the utmost care and respect. Our team uses industry best practices to prevent damage, loss, or delays during your move, giving you confidence that your valuable assets are in safe hands.",
+      "image": "images/ic1.webp"
+    },
+    {
+      "title": "Modern, Well-Equipped Fleet and Advanced Equipment",
+      "description": "At Perth Central Movers, we invest in a modern fleet of trucks and professional-grade moving equipment designed specifically to handle office relocations efficiently. Our vehicles come equipped with padded flooring, lift gates, secure strapping systems, and other specialised tools to ensure the safe transportation of your office furniture, IT equipment, and other items. This investment in technology and equipment means we can handle complex moves with ease and reliability.",
+      "image": "images/ic2.webp"
+    },
+    {
+      "title": "Flexible Scheduling Designed to Minimise Business Disruption",
+      "description": "Understanding that your business can’t simply pause operations, we offer flexible scheduling options tailored to your needs. Whether you prefer your move to happen outside standard business hours, during weekends, or on public holidays, we accommodate your schedule. This flexibility helps you maintain productivity and keeps your clients and employees satisfied throughout the transition.",
+      "image": "images/ic3.webp"
+    },
+    {
+      "title": "Fully Insured for Your Peace of Mind",
+      "description": "We take your trust seriously. Perth Central Movers is fully insured, which means your belongings and equipment are protected throughout the entire moving process. Our comprehensive insurance coverage provides you with peace of mind knowing that, in the unlikely event of damage or loss, you are fully covered.",
+      "image": "images/ic4.webp"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Exceptional Customer Support and Clear Communication",
+      "answer": "From your initial inquiry to the final delivery, our team is dedicated to providing excellent customer service. We keep you informed every step of the way, responding promptly to your questions and providing updates on the progress of your move. Our commitment to clear, transparent communication ensures that you feel confident and supported throughout the entire relocation process."
+    },
+    {
+      "question": "1. How much does it cost to move an office in Perth?",
+      "answer": "The cost of an office move depends on several factors, including the size of your office, the distance between locations, the amount of furniture and equipment to be moved, and any additional services like packing or IT equipment handling. We offer free, no-obligation quotes tailored to your specific requirements."
+    },
+    {
+      "question": "2. Do you provide packing and unpacking services for office moves?",
+      "answer": "Yes, we offer professional packing and unpacking services. Our trained team uses high-quality packing materials to securely pack your computers, files, electronics, and office supplies, ensuring everything arrives safely and is unpacked efficiently at your new location."
+    },
+    {
+      "question": "3. Can you move sensitive IT equipment and electronics?",
+      "answer": "Absolutely. We have extensive experience handling and transporting sensitive IT equipment, including servers, computers, printers, and networking devices. We use specialised packing techniques and equipment to protect your technology during the move."
+    },
+    {
+      "question": "4. How far in advance should I book my office move?",
+      "answer": "We recommend booking your office removal at least 2-4 weeks in advance to secure your preferred moving date, especially during busy periods. However, we also accommodate last-minute moves when possible. Just get in touch with us as early as you can."
+    },
+    {
+      "question": "5. Do you offer after-hours or weekend moving services?",
+      "answer": "Yes, we understand that minimizing downtime is critical for businesses. That’s why we provide flexible scheduling options, including evenings, weekends, and public holidays, to suit your operational needs."
+    },
+    {
+      "question": "6. Are your office removalists insured and licensed?",
+      "answer": "Yes, Perth Central Movers is fully licensed and insured. This ensures that your belongings and equipment are protected throughout the entire moving process, giving you peace of mind."
+    },
+    {
+      "question": "7. What areas do you serve for office removals?",
+      "answer": "We provide office removal services throughout Perth and its surrounding suburbs. No matter where your business is located or moving to within the Perth metropolitan area, we’ve got you covered."
+    },
+    {
+      "question": "8. How do you handle fragile or valuable office items?",
+      "answer": "Our professional movers are trained to carefully pack, transport, and unpack fragile or high-value items such as artwork, antiques, sensitive electronics, and important documents. We use specialised packing materials and handling techniques to ensure these items arrive safely."
+    },
+    {
+      "question": "9. Can you help with office furniture disassembly and reassembly?",
+      "answer": "Yes, our team can disassemble office furniture, cubicles, and shelving for safe transport and then reassemble everything at your new location. We make sure all parts are accounted for and set up according to your specifications."
+    },
+    {
+      "question": "10. What if I need storage solutions during the move?",
+      "answer": "If you require short or long-term storage during your office relocation, we can connect you with trusted storage providers or arrange secure storage solutions to suit your needs."
+    }
+  ],
+  "about": [
+    {
+      "title": "Expertise in Office Moves of All Sizes",
+      "description": "Moving an office is one of the most complex types of relocations, requiring expertise, meticulous planning, and a team you can truly rely on. At Perth Central Movers, we bring years of experience combined with a customer-centric approach to every office relocation project. We understand the challenges that come with moving a business and are committed to making your move as smooth, efficient, and secure as possible. Here’s why Perth businesses consistently trust us for their office moving needs: Whether you are relocating a small startup with a handful of desks or a large corporate office with multiple departments, our team has the knowledge and experience to manage office moves of any scale. We are well-versed in handling the unique challenges that office relocations present, such as the secure transport of sensitive IT equipment, confidential files, and delicate electronics. We plan each move meticulously to minimise downtime and ensure your business continues to operate with minimal disruption."
+    }
+  ]
+}
