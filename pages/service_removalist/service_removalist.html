@@ -20,96 +20,75 @@
 <body>
     <!-- Navbar -->
     <header id="navbar"></header>
-    <script src="navbar.js"></script>
+    <script src="../../navbar.js"></script>
     <!-- Navbar -->
     <!-- Home Page -->
-    <section
-        class="relative md:bg-[#84bf34] bg-[url('images/pcm-images/mb.webp')] text-white md:h-[450px] h-[700px] py-10 bg-no-repeat bg-right md:bg-contain bg-cover flex items-center   md:bg-[url('images/pcm-images/nheader.webp')]">
-        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between h-full px-6">
 
-            <!-- Left Text Content -->
-            <div class="lg:w-[45%] space-y-6">
-                <h1 class="text-4xl lg:text-5xl font-bold leading-tight font-bitter">
-                    Welcome to <br />
-                    Perth Central Movers
+
+    <section class="bg-gray-800 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-center">
+            <!-- Left Content -->
+            <div>
+                <h1 class="text-4xl font-bold leading-tight">
+                    House Removalists in <br class="hidden md:block" /> Melbourne
                 </h1>
-                <p class="text-lg text-white/90 leading-relaxed">
-                    Experience Professional Moving Services with the Best Movers in Perth -<br />
-                    Reliable, Efficient, and Affordable
+                <p class="mt-4 text-gray-300">
+                    Looking for reliable house removalists in Melbourne? At Melbourne Central Movers, we make moving
+                    easy with professional, safe, and affordable house relocation services. Whether you’re shifting from
+                    a compact apartment or a spacious family home, our experienced team ensures a smooth and worry-free
+                    move across Melbourne and surrounding suburbs. With local expertise and modern equipment, we handle
+                    every step of your move with precision.
                 </p>
-                <a href="#"
-                    class="inline-block bg-black text-white px-6 py-3 rounded-md font-semibold text-lg hover:bg-gray-900 transition">
-                    Get a Free Quote
-                </a>
+
+                <!-- Quote Form -->
+                <div class="mt-6 bg-lime-500 text-black rounded-full px-4 py-3 flex flex-wrap gap-3 items-center">
+                    <div class="flex-1">
+                        <input type="text" placeholder="Enter Location"
+                            class="w-full px-4 py-2 bg-white rounded text-sm" />
+                    </div>
+                    <div class="flex-1">
+                        <input type="text" placeholder="Enter Location"
+                            class="w-full px-4 py-2 rounded bg-white text-sm" />
+                    </div>
+                    <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">
+                        Get a Free Quote
+                    </button>
+                </div>
+
+                <!-- Service Tags -->
+                <div class="mt-6 flex gap-6 text-white text-sm font-medium">
+                    <a href="#" class="border-b border-white">Interstate</a>
+                    <a href="#" class="border-b border-white">Business</a>
+                    <a href="#" class="border-b border-white">Storage</a>
+                </div>
+
+                <!-- Ratings -->
+                <div class="mt-6 flex items-center gap-6 text-sm text-gray-300">
+                    <div>
+                        <span class="text-lime-400 font-bold">10 Years</span> <br />Experience
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="text-yellow-400">★★★★★</span>
+                        <span class="text-white">(4.2)</span>
+                        <span>166</span>
+                        <img src="https://demo.alphabet26.in/assets/images/allImages/Google.webp" alt="Google"
+                            class="h-6" />
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <img src="https://demo.alphabet26.in/assets/images/allImages/Trustpilot.webp" alt="Trustpilot"
+                            class="h-6" />
+                    </div>
+                </div>
             </div>
 
-        </div>
-    </section>
-    <!-- Home Page End -->
-
-    
-    <section class="my-8">
-        <div
-            class="bg-gray-700 p-6 rounded-md max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4">
-            <div class="flex flex-col w-full md:w-1/3">
-                <label class="text-white mb-1">Moving from</label>
-                <input id="from-location" type="text" placeholder="Enter Location"
-                    class="rounded-md px-4 py-2 outline-none w-full bg-white" />
-            </div>
-            <div class="flex flex-col w-full md:w-1/3">
-                <label class="text-white mb-1">Moving to</label>
-                <input id="to-location" type="text" placeholder="Enter Location"
-                    class="rounded-md px-4 py-2 outline-none w-full bg-white" />
-            </div>
-            <button onclick="window.location.href='https://hollowayremovals.vercel.app/form'"
-                class="bg-[#84BF34] text-white font-semibold px-6 py-3 rounded-md hover:bg-lime-600 transition">
-                Get a Free Quote
-            </button>
-        </div>
-    </section>
-
-    <!-- Review section -->
-    <section class="bg-[#84bf34] text-white py-10">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl lg:text-3xl font-bold mb-8 text-white">
-                Trusted by Thousands of Customers Like You
-            </h2>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center">
-                <!-- Review Card -->
-                <div class="space-y-2">
-                    <img src="images/pcm-logo/Google.webp" alt="Google" class="h-20 mx-auto" />
-                    <div class="text-yellow-400 text-lg">★★★★★</div>
-                    <p class="text-sm text-white/90">4.2 (162 Reviews)</p>
-                </div>
-
-                <div class="space-y-2">
-                    <img src="images/pcm-logo/Trustpilot.webp" alt="Trustpilot" class="h-20 mx-auto" />
-                    <div class="text-yellow-400 text-lg">★★★★★</div>
-                    <p class="text-sm text-white/90">4.5 (210 Reviews)</p>
-                </div>
-
-                <div class="space-y-2">
-                    <img src="images/pcm-logo/Facebook.webp" alt="Facebook" class="h-20 mx-auto" />
-                    <div class="text-yellow-400 text-lg">★★★★★</div>
-                    <p class="text-sm text-white/90">4.7 (320 Reviews)</p>
-                </div>
-
-                <div class="space-y-2">
-                    <img src="images/pcm-logo/Find a mover.webp" alt="Find a Mover" class="h-20 mx-auto" />
-                    <div class="text-yellow-400 text-lg">★★★★★</div>
-                    <p class="text-sm text-white/90">4.6 (98 Reviews)</p>
-                </div>
-
-                <div class="space-y-2">
-                    <img src="images/pcm-logo/product review.webp" alt="Product Review" class="h-20 mx-auto" />
-                    <div class="text-yellow-400 text-lg">★★★★★</div>
-                    <p class="text-sm text-white/90">4.8 (187 Reviews)</p>
-                </div>
+            <!-- Right Image -->
+            <div class="w-full">
+                <img src="https://demo.alphabet26.in/assets/images/allImages/mcm-banner%20(6).webp" alt="MCM Van"
+                    class="rounded-lg shadow-xl w-full" />
             </div>
         </div>
     </section>
-    <!-- Review Section End -->
+
 
     <!-- Service Section  -->
     <section class="bg-[#3b3e45] text-white py-16">
@@ -234,121 +213,16 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Service Section -->
-
-    <!-- Pcm will help you move easily  -->
-    <section
-        class="relative bg-[#84bf34] text-white md:h-[450px] py-10 bg-no-repeat bg-right bg-contain flex items-center   md:bg-[url('images/pcm-images/PCM%20header%20banner%202.webp')]">
-        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between h-full px-6">
-            <div class="lg:w-[43%] w-full space-y-8">
-                <div>
-                    <h2 class="text-3xl lg:text-4xl font-bold mb-2">
-                        PCM will help you to move easily
-                    </h2>
-                    <p class="text-white/90 text-lg">
-                        Expert packing, safe transport, and timely delivery.
-                    </p>
-                </div>
-
-                <!-- Form -->
-                <form class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl">
-                    <input type="text" placeholder="Full Name*"
-                        class="px-4 py-3 rounded-md text-black placeholder-gray-500 w-full bg-white" />
-                    <input type="text" placeholder="Phone Number*"
-                        class="px-4 py-3 rounded-md text-black placeholder-gray-500 w-full bg-white" />
-                    <input type="email" placeholder="Your Email*"
-                        class="px-4 py-3 rounded-md text-black placeholder-gray-500 w-full bg-white" />
-                </form>
-
-                <!-- Submit Button -->
-                <button type="submit"
-                    class="mt-4 bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-900 transition">
-                    Submit
-                </button>
-            </div>
-
-        </div>
-    </section>
-    <!-- Pcm will help you move easily end -->
-
-
-    <section class="bg-white py-16">
-        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-20">
-            <!-- Left Image with Badge -->
-            <div class="relative w-full lg:w-1/2">
-                <img src="images/pcm-images/s3.webp" alt="PCM Worker" class="rounded-md shadow-md w-full" />
-                <!-- Badge -->
-                <div
-                    class="absolute top-4 right-4 bg-[#84bf34] text-white text-sm font-semibold px-3 py-1 rounded-br-md">
-                    10K+<br />Customer Service
-                </div>
-            </div>
-            <!-- Right Content -->
-            <div class="w-full lg:w-1/2 space-y-6 ">
-                <!-- Heading -->
-                <div>
-                    <p class="text-[#84bf34] font-semibold text-lg">Trusted Mover service</p>
-                    <h2 class="text-3xl lg:text-4xl font-bold leading-tight">
-                        World class moving &<br />packers services
-                    </h2>
-                    <p class="mt-4 text-gray-700">
-                        All movers and packers who partner with us must meet rigorous qualification criteria designed to
-                        uphold the
-                        highest standards in the industry. We conduct thorough background checks, verify credentials,
-                        and require
-                        proven experience to ensure that every team member is capable of delivering safe, dependable,
-                        and professional
-                        relocation services. Our goal is to provide customers with peace of mind by maintaining a
-                        trusted network of
-                        trained experts who are committed to excellence, transparency, and customer satisfaction
-                        throughout every step
-                        of the moving process.
-                    </p>
-
-                </div>
-                <!-- Icons Grid -->
-                <div class="grid grid-cols-2 gap-4 text-sm ">
-                    <div class="flex items-start gap-3">
-                        <img src="images/pcm-icons/ic1.webp" alt="Domestic" class="w-12 h-12 mt-1" />
-                        <span class="text-base font-extrabold">Domestic and International Service</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <img src="images/pcm-icons/ic2.webp" alt="Multi-modal" class="w-12 h-12 mt-1" />
-                        <span class="text-base font-extrabold">Multi-modal Transport Service</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <img src="images/pcm-icons/ic3.webp" alt="Tracking" class="w-12 h-12 mt-1" />
-                        <span class="text-base font-extrabold">End to End Tracking Service system</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <img src="images/pcm-icons/ic4.webp" alt="Time Bound" class="w-12 h-12 mt-1" />
-                        <span class="text-base font-extrabold">Dedicated & Time Bound deliveries</span>
-                    </div>
-                </div>
-
-                <!-- Button -->
-                <a href="#contact"
-                    class="inline-block bg-gray-800 text-white text-base font-semibold px-6 py-3 rounded-md hover:bg-black transition">
-                    Contact Us
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-
     <section class="relative bg-cover bg-center bg-no-repeat py-20"
         style="background-image: url('images/pcm-images/PCM\ why\ choose\ us.webp');">
         <div class="absolute inset-0 bg-black bg-opacity-60"></div> <!-- Overlay -->
-
         <div class="relative container mx-auto px-6 text-white z-10">
             <h2 class="text-4xl font-bold text-center mb-12">Why Choose Us</h2>
-
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- 1. Big Experience -->
                 <div
@@ -359,7 +233,6 @@
                         PCM have more than 15+ years experienced in household goods and corporate office relocation.
                     </p>
                 </div>
-
                 <!-- 2. Goods Insurance (green) -->
                 <div
                     class="hover:bg-[#84bf34] bg-[#3A3A3A] p-6 rounded-lg shadow-lg text-white flex flex-col items-start">
@@ -369,7 +242,6 @@
                         PCM provides customers Goods Transit Insurance along with All Risk Insurance..
                     </p>
                 </div>
-
                 <!-- 3. Best Price Services -->
                 <div
                     class="bg-[#3A3A3A] p-6 rounded-lg hover:bg-[#84bf34] border border-white/20 shadow-md flex flex-col items-start">
@@ -380,7 +252,6 @@
                         companies.
                     </p>
                 </div>
-
                 <!-- 4. 100% Client Satisfaction -->
                 <div
                     class="bg-[#3A3A3A] p-6 rounded-lg hover:bg-[#84bf34] border border-white/20 shadow-md flex flex-col items-start">
@@ -390,7 +261,6 @@
                         PCM ensures high quality work & 100% customers satisfaction guarantee.
                     </p>
                 </div>
-
                 <!-- 5. Timely Delivery -->
                 <div
                     class="bg-[#3A3A3A] p-6 rounded-lg hover:bg-[#84bf34] border border-white/20 shadow-md flex flex-col items-start">
@@ -401,7 +271,6 @@
                         100% satisfaction.
                     </p>
                 </div>
-
                 <!-- 6. 24/7 Service -->
                 <div
                     class="bg-[#3A3A3A] p-6 rounded-lg hover:bg-[#84bf34] border border-white/20 shadow-md flex flex-col items-start">
@@ -415,6 +284,29 @@
         </div>
     </section>
 
+
+    <section class="grid md:grid-cols-2">
+        <!-- Left Image -->
+        <div class="w-full h-full">
+            <img src="https://demo.alphabet26.in/assets/images/allImages/mcm-banner%20(6).webp" alt="MCM Team Packing"
+                class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Right Text Block -->
+        <div class="bg-lime-400 flex flex-col justify-center items-center text-center p-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-black relative inline-block">
+                <span class="bg-orange-400 px-2">We Care for Your Valuables</span><span>!</span>
+            </h2>
+            <p class="mt-4 text-white max-w-md">
+                Our team handles your belongings with extreme care and professionalism.
+                Whether you're moving across the street or across the city, we ensure each
+                item arrives in perfect condition.
+            </p>
+            <button class="mt-6 bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-gray-900 transition">
+                BOOK YOUR MOVE TODAY
+            </button>
+        </div>
+    </section>
 
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6 text-center">
@@ -491,7 +383,8 @@
         </div>
     </section>
 
-    <section class="py-20 bg-[#84BF34]">
+
+       <section class="py-20 bg-[#84BF34]">
         <h2 class="text-3xl font-bold text-center text-black mb-10">What our clients say</h2>
 
         <div class="swiper w-full px-4 md:px-20">
@@ -503,78 +396,6 @@
             <div class="swiper-pagination mt-6"></div>
         </div>
     </section>
-
-
-    <section class="bg-white py-16 relative text-center">
-        <!-- Left Box Icon -->
-        <img src="images/pcm-icons/m1.webp" alt="Left Box" class="absolute left-10 top-4 w-32 h-auto hidden md:block" />
-
-        <!-- Right Box Icon -->
-        <img src="images/pcm-icons/m2.webp" alt="Right Box"
-            class="absolute right-10 bottom-4 w-32 h-auto hidden md:block" />
-
-        <!-- Text -->
-        <h2 class="text-2xl md:text-3xl font-semibold text-black mb-6">
-            Thinking of Moving? We’ve Got You Covered
-        </h2>
-
-        <!-- Buttons -->
-         <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4">
-            <a href="#quote"
-                class="bg-[#74c043] text-white font-medium px-8 py-3 rounded-md hover:bg-[#66ad3b] transition w-[230px]">
-                Get Quote
-            </a>
-            <a href="tel:1300163694"
-                class="border-2 border-[#74c043] text-black font-medium px-8 py-3 rounded-md hover:bg-[#f5fff0] transition w-[230px]">
-                Call - 1300 163 694
-            </a>
-        </div>
-    </section>
-
-    <div class=" bg-gray-600 mx-auto py-10 md:px-20 px-4">
-        <h2 class="text-center text-3xl font-semibold mb-8 text-white">PCM Blogs</h2>
-
-        <div class="swiper pcm-swiper">
-            <div class="swiper-wrapper" id="pcm-blog-slider"></div>
-            <div class="swiper-pagination flex justify-center mt-5"></div>
-        </div>
-    </div>
-
-    <section class="bg-white text-gray-800">
-        <div class="max-w-6xl mx-auto py-12 px-4 grid md:grid-cols-2 gap-10 items-center pcm-removalists">
-            <!-- Left Content -->
-            <div class="space-y-6">
-                <h1 class="text-3xl md:text-4xl font-bold leading-tight">
-                    Professional Removalists in Perth for Local, Regional WA & Interstate Moves
-                </h1>
-                <p class="text-gray-700 leading-relaxed">
-                    Looking for reliable removalists in Perth? <strong>PCM (Perth Central Movers)</strong> offers expert
-                    moving services across Perth metro, regional Western Australia, and interstate locations.
-                    Our experienced team specialises in local house moves, office relocations, and long-distance
-                    removals—ensuring your belongings arrive safely and on time. Whether you're moving within Perth,
-                    relocating to a regional town, or moving interstate, we provide a seamless, stress-free experience
-                    tailored to your needs.
-                </p>
-                <p class="font-semibold text-gray-900">
-                    Choose PCM – Perth Central Movers, your trusted removalists for regional and interstate relocations.
-                </p>
-            </div>
-
-            <!-- Right Map -->
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <div class="relative">
-                    <iframe class="w-full h-80 md:h-96"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.331622365187!2d115.8575!3d-31.9505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32badc8a7d75d3%3A0x504f0b535df3c80!2sPerth%20WA%2C%20Australia!5e0!3m2!1sen!2sin!4v1626341816927!5m2!1sen!2sin"
-                        style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                    <div class="absolute top-4 left-4 bg-white text-gray-900 text-sm px-3 py-1 rounded shadow">
-                        View Larger Map
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <div class="flex flex-col md:flex-row gap-8 p-8  text-white font-semibold bg-[#84BF34]">
         <!-- FAQ Section -->
@@ -622,41 +443,6 @@
                 <button type="submit"
                     class="bg-[#84BF34] text-gray-800 font-semibold px-6 py-2 rounded hover:bg-lime-600">Submit</button>
             </form>
-        </div>
-    </div>
-
-
-     <div class="bg-[#84BF34] relative mt-[250px] py-20">
-        <div class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto p-6">
-
-            <!-- Left Person with Boxes -->
-            <div class="hidden md:block w-1/4 absolute -top-[230px]">
-                <img src="images/pcm-images/pt.webp" alt="Mover with boxes" class="w-full h-auto">
-            </div>
-
-            <!-- Center Text Section -->
-            <div class="w-full md:w-1/2 mx-auto text-center px-4">
-                <h2 class="text-2xl md:text-3xl font-bold text-green-900 mb-2">
-                    Your Trusted Partner for Stress-Free <br class="hidden md:block" />Moves Across Perth, WA & Beyond
-                </h2>
-                <p class="text-gray-700 mb-6">
-                    Connect with Australia’s most Reliable and Efficient <br class="hidden md:block" />Removalists
-                </p>
-                <div class="flex justify-center gap-4 flex-wrap">
-                    <button
-                        class="border border-black px-5 py-2 rounded font-medium hover:bg-black hover:text-white transition">
-                        Request Call Back
-                    </button>
-                    <a href="tel:1300163694"
-                        class="bg-black text-white px-5 py-2 rounded font-medium hover:bg-gray-900 transition">
-                        Call - 1300 163 694
-                    </a>
-                </div>
-            </div>
-            <!-- Right Person with Box -->
-            <div class="hidden md:block w-1/4  -top-[230px] absolute right-10">
-                <img src="images/pcm-images/pt2.webp" alt="Mover with PCM box" class="w-full h-auto">
-            </div>
         </div>
     </div>
 
@@ -750,13 +536,14 @@
         </div>
     </footer>
 
+
     <script src="js/googlemap.js"></script>
+
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRwtGvywDWGOX4ULNCXZNxFiW-Qutu9Bc&libraries=places"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="slider.js"></script>
-    <script src="faq.js"></script>
-
+    <script src="../../slider.js"></script>
+    <script src="../../faq.js"></script>
 </body>
 
 </html>

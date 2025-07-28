@@ -34,7 +34,7 @@ const navLinks = [
         text: "Moving Office",
         href: "/pages/office/of.html",
     },
-    { text: "Storage", href: "#" }
+    { text: "Service Removalist", href: "/pages/service_removalist/service_removalist.html" }
 ];
 
 
