@@ -10,6 +10,7 @@
     <script src="tailwind-css.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
         .font-bitter {
             font-family: 'Bitter', serif;
@@ -507,10 +508,108 @@
         </div>
     </section>
 
+    <!-- What Make Us Best -->
+    <h2 class="text-3xl font-bold mb-2 text-center py-4">What Makes Us the Best Removalists in Perth?</h2>
+    <div id="services" class="my-6 max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+    </div>
 
 
-    <!-- Why Choose Us -->
+    <section class="bg-white py-16 px-4 lg:px-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
+            <span class="text-blue-800">REMOVAL SERVICES</span> WE OFFER
+        </h2>
+
+        <div class="grid grid-cols-5 gap-10 items-start">
+
+            <!-- Left Column (3 Services) -->
+            <div class="col-span-3 grid grid-cols-1 md:grid-cols-1 gap-6">
+                <!-- Row 1 -->
+                <div class="grid grid-cols-3 gap-6">
+                    <!-- Service 1 -->
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-house fa-2x text-blue-600"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-800">Home Moves</h3>
+                            <p class="text-gray-600 text-sm">
+                                Moving your home can be daunting but not so much when our team is here to help you pack,
+                                load, and transport your belongings to your new home.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-briefcase fa-2x text-blue-600"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-800">Office Moves</h3>
+                            <p class="text-gray-600 text-sm">
+                                Our office moves are designed to ensure a smooth move while minimising downtime. So, no
+                                more letting your move disrupt your business.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-route fa-2x text-blue-600"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-800">Interstate Moves</h3>
+                            <p class="text-gray-600 text-sm">
+                                If you're relocating to another state, avail the assistance of our Melbourne City movers
+                                and take care of your long-distance moves efficiently.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="grid grid-cols-3 gap-6">
+                    <!-- Service 4 -->
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-couch fa-2x text-blue-600"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-800">Furniture Moves</h3>
+                            <p class="text-gray-600 text-sm">
+                                Whether you're relocating a single piece or an entire household's furniture, we handle
+                                everything with care.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-trash-alt fa-2x text-blue-600"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-800">Rubbish Moves</h3>
+                            <p class="text-gray-600 text-sm">
+                                We remove waste and unwanted clutter from your space promptly and responsibly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-box-open fa-2x text-blue-600"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-800">Packing Services</h3>
+                            <p class="text-gray-600 text-sm">
+                                We offer top-notch packing services to ensure the safety of your items during the move.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column (Image) -->
+            <div class="col-span-2">
+                <img src="images/pcm-images/s1.webp" alt="City Image" class="rounded-[30px] w-full shadow-lg" />
+            </div>
+        </div>
+    </section>
+
+
     <section class="bg-[#53565a] text-white py-12 relative overflow-hidden">
+
         <!-- Left Mover -->
         <img src="images/pcm-images/pt.webp" alt="Mover Left"
             class="absolute bottom-0 left-0 h-full max-w-xs object-contain z-10" />
@@ -541,15 +640,14 @@
 
             <!-- Updated Headline -->
             <h2 class="text-2xl sm:text-3xl font-semibold">
-                Perth’s Trusted & Efficient Removalists – <br />
-                <span class="font-bold">Perth Central Movers</span>
+                Connect with Australia's most Reliable <br />
+                <span class="font-bold">and Efficient Removalists</span>
             </h2>
 
             <!-- CTA Buttons -->
             <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-                <button 
-                onclick="createModal()"
-                class="bg-white text-[#84BF34] font-semibold px-6 py-3 rounded-md hover:bg-gray-200">
+                <button onclick="createModal()"
+                    class="bg-white text-[#84BF34] font-semibold px-6 py-3 rounded-md hover:bg-gray-200">
                     Request Call Back
                 </button>
                 <a href="tel:1300223668"
@@ -570,7 +668,7 @@
             Get a Quote
         </div>
     </section>
-
+    <script src="js/what_make_best.js"></script>
 
     <div class="flex flex-col md:flex-row gap-8 p-8  text-white font-semibold bg-[#84BF34]">
         <!-- FAQ Section -->
