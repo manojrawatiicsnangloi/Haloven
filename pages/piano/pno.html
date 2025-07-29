@@ -19,7 +19,6 @@
 
 <body>
     <!-- Navbar -->
-  <!-- Navbar -->
     <header id="navbar"></header>
   <script src="../../navbar.js"></script>
     <!-- Navbar -->
@@ -30,7 +29,7 @@
         <!-- Heading -->
         <div class="relative z-10 text-center">
             <h1 class="text-white text-4xl md:text-5xl font-bold">
-                <span class="bg-black/70 px-4 py-2 rounded-md text-[#84BF34]">House Removalists</span>
+                <span class="bg-black/70 px-4 py-2 rounded-md text-[#84BF34]">Antique Removalist</span>
             </h1>
         </div>
         <!-- Form -->
@@ -160,6 +159,7 @@
                     to ensure you settle in without the usual chaos.
                 </p>
                 <button
+                onclick="createModal()"
                     class=" relative bg-gray-800 text-white font-semibold px-6 py-3 rounded shadow flex items-center hover:bg-gray-900 transition">
                     <span class="mr-2 italic">Book Now</span>
                     <!-- <span class="  bg-[#84BF34] w-10 h-full flex items-center justify-center gap-0 rounded-r">
@@ -333,10 +333,11 @@
 
         <!-- Buttons -->
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4">
-            <a href="#quote"
+            <button 
+                onclick="createModal()"
                 class="bg-[#74c043] text-white font-medium px-8 py-3 rounded-md hover:bg-[#66ad3b] transition w-[230px]">
                 Get Quote
-            </a>
+            </button>
             <a href="tel:1300163694"
                 class="border-2 border-[#74c043] text-black font-medium px-8 py-3 rounded-md hover:bg-[#f5fff0] transition w-[230px]">
                 Call - 1300 163 694
@@ -403,6 +404,7 @@
             </div>
 
             <button
+            onclick="createModal()"
                 class="mt-6 bg-gray-700 text-white px-6 py-3 text-lg font-semibold flex items-center gap-2 hover:bg-gray-800">
                 Ask your question
                 <span class="bg-[#84BF34] px-2 py-1 rounded-r text-gray-800 font-bold text-xl">&gt;&gt;</span>

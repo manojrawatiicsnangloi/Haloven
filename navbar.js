@@ -1,3 +1,59 @@
+  const createModal = () => {
+  const overlay = document.createElement('div');
+  overlay.className = "fixed inset-0  flex items-center justify-center z-50";
+  overlay.id = "modalOverlay";
+  overlay.style.background = 'rgba(0, 0, 0, 0.6)';
+
+  const modal = document.createElement('div');
+  modal.className = "bg-[#4A4D52] text-white rounded-lg p-8 w-96 relative";
+
+  const closeX = document.createElement('button');
+  closeX.innerHTML = "&times;";
+  closeX.className = "absolute top-2 right-3 text-white text-2xl font-bold focus:outline-none";
+  closeX.onclick = () => overlay.remove();
+
+  const title = document.createElement('h2');
+  title.className = "text-3xl font-bold mb-6 text-center";
+  title.textContent = "Get Quick Quote";
+
+  const form = document.createElement('form');
+  form.className = "space-y-4";
+
+  const nameInput = document.createElement('input');
+  nameInput.type = "text";
+  nameInput.placeholder = "Your full Name";
+  nameInput.className = "w-full px-4 py-2 rounded text-black bg-white";
+
+  const phoneInput = document.createElement('input');
+  phoneInput.type = "tel";
+  phoneInput.placeholder = "Phone number";
+  phoneInput.className = "w-full px-4 py-2 rounded text-black bg-white";
+
+  const emailInput = document.createElement('input');
+  emailInput.type = "email";
+  emailInput.placeholder = "Your Email";
+  emailInput.className = "w-full px-4 py-2 rounded text-black bg-white";
+
+  const submitBtn = document.createElement('button');
+  submitBtn.type = "submit";
+  submitBtn.textContent = "Submit";
+  submitBtn.className = "bg-[#84BF34] text-white w-full py-2 rounded font-semibold hover:bg-lime-600";
+
+  form.append(nameInput, phoneInput, emailInput, submitBtn);
+  modal.append(closeX, title, form);
+  overlay.append(modal);
+  document.body.appendChild(overlay);
+
+  form.onsubmit = (e) => {
+    e.preventDefault();
+    const name = nameInput.value;
+    const phone = phoneInput.value;
+    const email = emailInput.value;
+    alert(`Submitted:\nName: ${name}\nPhone: ${phone}\nEmail: ${email}`);
+    overlay.remove();
+  };
+};
+
 const logo = {
     src: "https://melbournecentralmovers.com.au/images/MCM%20logo%20green%202.webp",
     alt: "Logo",
@@ -42,7 +98,7 @@ const buttons = [
     {
         text: "Request call back",
         class:
-            "border border-[#84BF34] text-white px-4 py-2 rounded hover:bg-lime-600 transition"
+            "border border-[#84BF34] text-white px-4 py-2 rounded hover:bg-lime-600 transition",
     },
     {
         text: "Get a Quote",
@@ -112,10 +168,10 @@ function renderNavbar() {
         })
         .join("");
 
+const buttonHTML = buttons
+  .map(btn => `<button class="${btn.class}" onclick="createModal()">${btn.text}</button>`)
+  .join("");
 
-    const buttonHTML = buttons
-        .map(btn => `<button class="${btn.class}">${btn.text}</button>`)
-        .join("");
 
     const html = `
     <div class="bg-black text-white shadow-md">
@@ -141,3 +197,10 @@ function renderNavbar() {
 }
 
 renderNavbar();
+
+
+
+  // Attach to all buttons with the model-btn class
+  document.querySelectorAll('.model-btn').forEach(btn => {
+    btn.addEventListener('click', createModal);
+  });

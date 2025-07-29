@@ -97,43 +97,43 @@ const testimonials = [
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "../../images/pcm-images/s2.webp"
+                image: "images/PCM Service 1.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "../../images/pcm-images/s2.webp"
+                image: "images/PCM Service 2.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "../../images/pcm-images/s2.webp"
+                image: "images/PCM Service 3.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "../../images/pcm-images/s2.webp"
+                image: "images/PCM Service 4.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "../../images/pcm-images/s2.webp"
+                image: "images/PCM Service 5.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "../../images/pcm-images/s2.webp"
+                image: "images/PCM Service 1.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "../../images/pcm-images/s2.webp"
+                image: "images/PCM Service 2.webp"
             },
         ];
 
@@ -147,7 +147,9 @@ const testimonials = [
                     <h3 class="font-semibold italic">${blog.title}</h3>
                     <p class="text-xs text-gray-500 mb-2">${blog.date}</p>
                     <p class="text-sm text-gray-600 mb-4">${blog.desc}</p>
-                    <button class="bg-lime-400 px-6 py-2 text-gray-800 font-semibold rounded flex items-center gap-2 hover:bg-lime-500">
+                    <button
+                    onclick="createModal()"
+                    class="bg-lime-400 px-6 py-2 text-gray-800 font-semibold rounded flex items-center gap-2 hover:bg-lime-500">
                         Read more...
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
