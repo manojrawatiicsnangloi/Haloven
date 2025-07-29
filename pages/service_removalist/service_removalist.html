@@ -25,7 +25,7 @@
     <!-- Home Page -->
 
 
-    <section class="bg-gray-800 text-white py-12 px-6">
+    <section class="bg-[#53565a] text-white py-12 px-6 md:block hidden">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-center">
             <!-- Left Content -->
             <div>
@@ -41,12 +41,12 @@
                 </p>
 
                 <!-- Quote Form -->
-                <div class="mt-6 bg-lime-500 text-black rounded-full px-4 py-3 flex flex-wrap gap-3 items-center">
-                    <div class="flex-1">
+                <div class="mt-6 bg-lime-500 text-black rounded-full px-4 py-3 flex flex-col md:flex-row flex-wrap gap-3 items-center">
+                    <div class="md:flex-1">
                         <input type="text" placeholder="Enter Location"
                             class="w-full px-4 py-2 bg-white rounded text-sm" />
                     </div>
-                    <div class="flex-1">
+                    <div class="md:flex-1">
                         <input type="text" placeholder="Enter Location"
                             class="w-full px-4 py-2 rounded bg-white text-sm" />
                     </div>
@@ -61,7 +61,6 @@
                     <a href="#" class="border-b border-white">Business</a>
                     <a href="#" class="border-b border-white">Storage</a>
                 </div>
-
                 <!-- Ratings -->
                 <div class="mt-6 flex items-center gap-6 text-sm text-gray-300">
                     <div>
@@ -83,12 +82,82 @@
 
             <!-- Right Image -->
             <div class="w-full">
-                <img src="../../images/truck/pcm Truck 1.png" alt="MCM Van"
-                    class="rounded-lg shadow-xl w-full" />
+                <img src="../../images/truck/pcm Truck 1.png" alt="MCM Van" class="rounded-lg shadow-xl w-full" />
             </div>
         </div>
     </section>
 
+
+    <section class="text-white py-12 px-6 md:hidden"
+        style="background-image: url(../../images/truck//pcm\ Truck\ 1.png);">
+
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-center">
+            <!-- Left Content -->
+            <div>
+                <h1 class="text-4xl font-bold leading-tight">
+                    Stress-Free Moves Start Here
+                </h1>
+                <p class="mt-4 text-gray-300">
+                    Trusted removalists for Home, Office & Storage Over 13 years of experience with 4.8 ratings
+                </p>
+
+                <!-- Quote Form -->
+                <div
+                    class=" absolute  mt-6 bg-lime-500 text-black rounded-full px-4 py-3 flex flex-wrap gap-3 items-center">
+                    <div class="flex-1">
+                        <input type="text" placeholder="Enter Location"
+                            class="w-full px-4 py-2 bg-white rounded text-sm" />
+                    </div>
+                    <div class="flex-1">
+                        <input type="text" placeholder="Enter Location"
+                            class="w-full px-4 py-2 rounded bg-white text-sm" />
+                    </div>
+                    <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">
+                        Get a Free Quote
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8">
+        <!-- Service Tags -->
+        <div class="mt-4 flex flex-wrap gap-4 text-sm font-medium text-white">
+            <a href="#"
+                class="px-3 py-1 border border-white rounded-full hover:bg-white hover:text-black transition">Interstate</a>
+            <a href="#"
+                class="px-3 py-1 border border-white rounded-full hover:bg-white hover:text-black transition">Business</a>
+            <a href="#"
+                class="px-3 py-1 border border-white rounded-full hover:bg-white hover:text-black transition">Storage</a>
+        </div>
+
+        <!-- Ratings -->
+        <div class="mt-8 flex flex-wrap items-center gap-6 text-sm text-gray-300">
+            <!-- Experience -->
+            <div class="text-center">
+                <span class="text-lime-400 font-bold text-lg">10 Years</span><br />
+                <span class="text-xs uppercase tracking-wide text-gray-400">Experience</span>
+            </div>
+
+            <!-- Google Rating -->
+            <div class="flex items-center gap-2">
+                <span class="text-yellow-400 text-lg">★★★★★</span>
+                <span class="text-white font-semibold">(4.2)</span>
+                <span class="text-gray-400">166 Reviews</span>
+                <img src="https://demo.alphabet26.in/assets/images/allImages/Google.webp" alt="Google"
+                    class="h-6 w-auto" />
+            </div>
+
+            <!-- Trustpilot -->
+            <div class="flex items-center gap-2">
+                <img src="https://demo.alphabet26.in/assets/images/allImages/Trustpilot.webp" alt="Trustpilot"
+                    class="h-6 w-auto" />
+                <span class="text-gray-400 text-xs">Rated on Trustpilot</span>
+            </div>
+        </div>
+    </section>
 
     <!-- Service Section  -->
     <section class="bg-[#3b3e45] text-white py-16">
@@ -100,10 +169,8 @@
                 on service, quality, and value. You can place your trust in our professional team to remove the stress
                 and make your move easy.
             </p>
-
             <!-- Service Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
                 <!-- Card 1 -->
                 <div class="bg-white text-black rounded shadow-md overflow-hidden">
                     <img src="images/pcm-images/s1.webp" alt="Door to Door" class="w-full h-60 object-contain" />
@@ -115,8 +182,7 @@
                             service eliminates the hassle of multiple vendors, ensuring a seamless, efficient, and
                             stress-free move for both residential and commercial customers.
                         </p>
-                        <button 
-                        onclick="createModal()"
+                        <button onclick="createModal()"
                             class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
                             Learn more...
                         </button>
@@ -134,8 +200,7 @@
                             a large corporate facility, our trained staff ensures everything is moved safely, securely,
                             and on schedule with detailed planning and careful execution.
                         </p>
-                        <button 
-                        onclick="createModal()"
+                        <button onclick="createModal()"
                             class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
                             Learn more...
                         </button>
@@ -154,8 +219,7 @@
                             movers ensure your belongings are safely packed, loaded, transported, and delivered with
                             care, whether you’re moving locally or across long distances.
                         </p>
-                         <button 
-                        onclick="createModal()"
+                        <button onclick="createModal()"
                             class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
                             Learn more...
                         </button>
@@ -173,8 +237,7 @@
                             item with care. We also provide efficient unpacking services to help you settle in quickly
                             and comfortably at your new location.
                         </p>
-                        <button 
-                        onclick="createModal()"
+                        <button onclick="createModal()"
                             class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
                             Learn more...
                         </button>
@@ -192,8 +255,7 @@
                             who need flexibility in their moving schedule or want to store seasonal or surplus items
                             safely and conveniently.
                         </p>
-                       <button 
-                        onclick="createModal()"
+                        <button onclick="createModal()"
                             class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
                             Learn more...
                         </button>
@@ -212,8 +274,7 @@
                             every aspect of your move to ensure timely delivery and peace of mind, no matter the
                             distance or complexity.
                         </p>
-                        <button 
-                        onclick="createModal()"
+                        <button onclick="createModal()"
                             class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
                             Learn more...
                         </button>
@@ -294,8 +355,7 @@
     <section class="grid md:grid-cols-2">
         <!-- Left Image -->
         <div class="w-full h-full">
-            <img src="../../images/truck/pcm Truck 3.png" alt="MCM Team Packing"
-                class="w-full h-full object-cover" />
+            <img src="../../images/truck/pcm Truck 3.png" alt="MCM Team Packing" class="w-full h-full object-cover" />
         </div>
 
         <!-- Right Text Block -->
@@ -308,9 +368,8 @@
                 Whether you're moving across the street or across the city, we ensure each
                 item arrives in perfect condition.
             </p>
-            <button 
-            onclick="createModal()"
-            class="mt-6 bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-gray-900 transition">
+            <button onclick="createModal()"
+                class="mt-6 bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-gray-900 transition">
                 BOOK YOUR MOVE TODAY
             </button>
         </div>
@@ -392,7 +451,7 @@
     </section>
 
 
-       <section class="py-20 bg-[#84BF34]">
+    <section class="py-20 bg-[#84BF34]">
         <h2 class="text-3xl font-bold text-center text-black mb-10">What our clients say</h2>
 
         <div class="swiper w-full px-4 md:px-20">
