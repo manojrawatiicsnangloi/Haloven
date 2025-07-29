@@ -97,43 +97,43 @@ const testimonials = [
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "images/pcm-images/s2.webp"
+                image: "images/PCM Service 1.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "images/pcm-images/s2.webp"
+                image: "images/PCM Service 2.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "images/pcm-images/s2.webp"
+                image: "images/PCM Service 3.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "images/pcm-images/s2.webp"
+                image: "images/PCM Service 4.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "images/pcm-images/s2.webp"
+                image: "images/PCM Service 5.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "images/pcm-images/s2.webp"
+                image: "images/PCM Service 1.webp"
             },
             {
                 title: "Practical Tips for Packing Fragile Items",
                 date: "28 June 2025",
                 desc: "Moving home is exciting, but it can quickly become stressful when you consider all those precious,",
-                image: "images/pcm-images/s2.webp"
+                image: "images/PCM Service 2.webp"
             },
         ];
 
