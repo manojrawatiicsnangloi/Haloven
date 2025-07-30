@@ -55,7 +55,7 @@
 };
 
 const logo = {
-    src: "https://melbournecentralmovers.com.au/images/MCM%20logo%20green%202.webp",
+    src: "images/pcm-logo/PCM.webp",
     alt: "Logo",
     link: "/"
 };
@@ -177,7 +177,7 @@ const buttonHTML = buttons
     <div class="bg-black text-white shadow-md">
       <div class="xl:mx-4 md:mx-3 flex items-center justify-between py-3">
         <a href="${logo.link}" class="flex items-center gap-2">
-          <img src="${logo.src}" alt="${logo.alt}" class="h-10" />
+          <img src="${logo.src}" alt="${logo.alt}" class="h-20" />
         </a>
         <div class="flex flex-col">
           <div class="hidden lg:flex items-center gap-4 text-sm uppercase font-medium ml-auto">
@@ -204,3 +204,102 @@ renderNavbar();
   document.querySelectorAll('.model-btn').forEach(btn => {
     btn.addEventListener('click', createModal);
   });
+
+
+
+
+  // Footer
+
+  document.body.insertAdjacentHTML('afterend', `
+    
+    <footer class="bg-black text-white py-10 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-[#84BF34] font-bold mb-3">Quick Links</h4>
+                <ul class="space-y-1 text-sm text-gray-300">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Client Reviews</li>
+                    <li>Work With Us</li>
+                    <li>Partners</li>
+                    <li>Reach Us</li>
+                    <li>Video Reviews</li>
+                    <li>Blog</li>
+                    <li>News</li>
+                    <li>FAQ’s</li>
+                    <li>Sitemap</li>
+                    <li>Premium Services</li>
+                    <li>Storage Service</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+            <!-- Local Removals -->
+            <div>
+                <h4 class="text-[#84BF34] font-bold mb-3">Local Removals</h4>
+                <ul class="space-y-1 text-sm text-gray-300">
+                    <li>Subiaco</li>
+                    <li>Mount Lawley</li>
+                    <li>Leederville</li>
+                    <li>South Perth</li>
+                    <li>Cottesloe</li>
+                    <li>Claremont</li>
+                    <li>East Perth</li>
+                    <li>Joondalup</li>
+                    <li>Scarborough</li>
+                    <li>Fremantle</li>
+                    <li>Victoria Park</li>
+                    <li>Baldivis</li>
+                    <li>Applecross</li>
+                    <li>Nedlands</li>
+                    <li>Booragoon</li>
+                </ul>
+            </div>
+
+            <!-- Moving Local -->
+            <div>
+                <h4 class="text-[#84BF34] font-bold mb-3">Moving Local</h4>
+                <ul class="space-y-1 text-sm text-gray-300">
+                    <li>House Removalists</li>
+                    <li>Furniture Removals</li>
+                    <li>Office Relocation</li>
+                    <li>Two Men and a Truck</li>
+                    <li>Movers and Packers</li>
+                    <li>Loading and Unloading</li>
+                    <li>Piano Movers</li>
+                    <li>Pool Table Movers</li>
+                    <li>Safe Removalists</li>
+                    <li>Labour Hire</li>
+                </ul>
+            </div>
+
+            <!-- Contact Info and Logo -->
+            <div class="flex flex-col items-start md:items-center space-y-4">
+                <img src="images/pcm-logo/PCM.webp" alt="PCM Logo"
+                    class="mb-2">
+                <div class="flex items-center gap-3">
+                    <span class="text-sm font-bold">Follow Us:</span>
+                    <a href="#" class="text-[#84BF34] hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-[#84BF34] hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="text-sm space-y-2 mt-4 text-gray-300">
+                    <p><i class="fas fa-map-marker-alt text-[#84BF34] mr-2"></i>13 Towarri way, Wandi, Perth 6167</p>
+                    <p><i class="fas fa-phone text-[#84BF34] mr-2"></i>1300 163 694</p>
+                    <p><i class="fas fa-envelope text-[#84BF34] mr-2"></i>perthcentralmovers.com.au</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Note -->
+        <div class="text-center text-sm text-gray-500 mt-6">
+            Design & Developed By : <span class="text-[#84BF34]">Digital Ultra</span>
+        </div>        
+    </footer>
+    
+    `);
