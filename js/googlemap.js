@@ -4,8 +4,12 @@
         const toInput = document.getElementById('to-location');
 
         const options = {
-            types: ['geocode'], // You can adjust this to 'establishment', 'address', etc.
-            componentRestrictions: { country: "us" } // Optional: restrict to a country
+            componentRestrictions: {
+                country: "au"
+            },
+            types: ["geocode"],
+            fields: ["address_components", "formatted_address"]
+
         };
 
         new google.maps.places.Autocomplete(fromInput, options);

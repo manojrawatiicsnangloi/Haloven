@@ -1,4 +1,4 @@
-  const createModal = () => {
+const createModal = () => {
   const overlay = document.createElement('div');
   overlay.className = "fixed inset-0  flex items-center justify-center z-50";
   overlay.id = "modalOverlay";
@@ -55,61 +55,61 @@
 };
 
 const logo = {
-    src: "images/pcm-logo/PCM.webp",
-    alt: "Logo",
-    link: "/"
+  src: "images/pcm-logo/PCM.webp",
+  alt: "Logo",
+  link: "/"
 };
 
 const contactLinks = [
-    { text: "About Us", href: "/pages/about_us/aboutus.html" },
-    { text: "Contact Us", href: "/pages/contact_us/contactus.html" },
-    {
-        text: "1300 163 694",
-        href: "tel:1300163694",
-        isPhone: true
-    }
+  { text: "About Us", href: "/pages/about_us/aboutus.html" },
+  { text: "Contact Us", href: "/pages/contact_us/contactus.html" },
+  {
+    text: "1300 163 694",
+    href: "tel:1300163694",
+    isPhone: true
+  }
 ];
 const navLinks = [
-    { text: "Home", href: "/" },
-    {
-        text: "Moving Home",
-        href: "#",
-        sublinks: [
-            { text: "Antique Removalists", href: "/pages/antique/at.html" },
-            { text: "Commercial Removals", href: "/pages/commercial/com.html" },
-            { text: "Flats Removals", href: "/pages/flats/fl.html" },
-            { text: "Furniture Removals", href: "/pages/furniture/fr.html" },
-            { text: "Hotel Melbourne", href: "/pages/hotel/ht.html" },
-            { text: "Local Removals", href: "/pages/local/lc.html" },
-            { text: "Piano Removals", href: "/pages/piano/pno.html" },
-            { text: "Retirement Removals", href: "/pages/retirment/rt.html" },
-            { text: "School Removals", href: "/pages/school/sh.html" },
-        ]
-    },
-    {
-        text: "Moving Office",
-        href: "/pages/office/of.html",
-    },
-    { text: "Service Removalist", href: "/pages/service_removalist/service_removalist.html" }
+  { text: "Home", href: "/" },
+  {
+    text: "Moving Home",
+    href: "#",
+    sublinks: [
+      { text: "Antique Removalists", href: "/pages/antique/at.html" },
+      { text: "Commercial Removals", href: "/pages/commercial/com.html" },
+      { text: "Flats Removals", href: "/pages/flats/fl.html" },
+      { text: "Furniture Removals", href: "/pages/furniture/fr.html" },
+      { text: "Hotel Melbourne", href: "/pages/hotel/ht.html" },
+      { text: "Local Removals", href: "/pages/local/lc.html" },
+      { text: "Piano Removals", href: "/pages/piano/pno.html" },
+      { text: "Retirement Removals", href: "/pages/retirment/rt.html" },
+      { text: "School Removals", href: "/pages/school/sh.html" },
+    ]
+  },
+  {
+    text: "Moving Office",
+    href: "/pages/office/of.html",
+  },
+  { text: "Service Removalist", href: "/pages/service_removalist/service_removalist.html" }
 ];
 
 
 const buttons = [
-    {
-        text: "Request call back",
-        class:
-            "border border-[#84BF34] text-white px-4 py-2 rounded hover:bg-lime-600 transition",
-    },
-    {
-        text: "Get a Quote",
-        class:
-            "bg-[#84BF34] hover:bg-lime-600 text-black font-bold py-2 px-4 rounded transition"
-    }
+  {
+    text: "Request call back",
+    class:
+      "border border-[#84BF34] text-white px-4 py-2 rounded hover:bg-lime-600 transition",
+  },
+  {
+    text: "Get a Quote",
+    class:
+      "bg-[#84BF34] hover:bg-lime-600 text-black font-bold py-2 px-4 rounded transition"
+  }
 ];
 
 function createLink({ text, href, isPhone = false }) {
-    if (isPhone) {
-        return `
+  if (isPhone) {
+    return `
       <a href="${href}" class="flex items-center gap-2 text-[#84BF34] font-semibold whitespace-nowrap">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -117,39 +117,39 @@ function createLink({ text, href, isPhone = false }) {
         </svg>
         ${text}
       </a>`;
-    } else {
-        return `<a href="${href}" class="hover:text-[#84BF34]">${text}</a>`;
-    }
+  } else {
+    return `<a href="${href}" class="hover:text-[#84BF34]">${text}</a>`;
+  }
 }
 
 function renderNavbar() {
-    const contactHTML = contactLinks
-        .map((link, i) => {
-            const linkHTML = createLink(link);
-            const separator =
-                i < contactLinks.length - 1
-                    ? '<span class="border-r border-[#84BF34] h-5"></span>'
-                    : "";
-            return linkHTML + separator;
-        })
-        .join("");
+  const contactHTML = contactLinks
+    .map((link, i) => {
+      const linkHTML = createLink(link);
+      const separator =
+        i < contactLinks.length - 1
+          ? '<span class="border-r border-[#84BF34] h-5"></span>'
+          : "";
+      return linkHTML + separator;
+    })
+    .join("");
 
-    const navHTML = navLinks
-        .map(link => {
-            if (link.sublinks) {
-                const half = Math.ceil(link.sublinks.length / 2);
-                const firstCol = link.sublinks.slice(0, half);
-                const secondCol = link.sublinks.slice(half);
+  const navHTML = navLinks
+    .map(link => {
+      if (link.sublinks) {
+        const half = Math.ceil(link.sublinks.length / 2);
+        const firstCol = link.sublinks.slice(0, half);
+        const secondCol = link.sublinks.slice(half);
 
-                const renderCol = col =>
-                    col
-                        .map(
-                            sub =>
-                                `<a href="${sub.href}" class="block px-4 py-2 text-sm text-black hover:text-[#84BF34] whitespace-nowrap">${sub.text}</a>`
-                        )
-                        .join("");
+        const renderCol = col =>
+          col
+            .map(
+              sub =>
+                `<a href="${sub.href}" class="block px-4 py-2 text-sm text-black hover:text-[#84BF34] whitespace-nowrap">${sub.text}</a>`
+            )
+            .join("");
 
-                return `
+        return `
         <div class="relative group">
           <a href="${link.href}" class="hover:text-[#84BF34] flex items-center gap-1">
             ${link.text}
@@ -162,18 +162,18 @@ function renderNavbar() {
             <div class="flex flex-col">${renderCol(secondCol)}</div>
           </div>
         </div>`;
-            } else {
-                return `<a href="${link.href}" class="hover:text-[#84BF34]">${link.text}</a>`;
-            }
-        })
-        .join("");
+      } else {
+        return `<a href="${link.href}" class="hover:text-[#84BF34]">${link.text}</a>`;
+      }
+    })
+    .join("");
 
-const buttonHTML = buttons
-  .map(btn => `<button class="${btn.class}" onclick="createModal()">${btn.text}</button>`)
-  .join("");
+  const buttonHTML = buttons
+    .map(btn => `<button class="${btn.class}" onclick="createModal()">${btn.text}</button>`)
+    .join("");
 
 
-    const html = `
+  const html = `
     <div class="bg-black text-white shadow-md">
       <div class="xl:mx-4 md:mx-3 flex items-center justify-between py-3">
         <a href="${logo.link}" class="flex items-center gap-2">
@@ -193,24 +193,24 @@ const buttonHTML = buttons
       </div>
     </div>`;
 
-    document.getElementById("navbar").innerHTML = html;
+  document.getElementById("navbar").innerHTML = html;
 }
 
 renderNavbar();
 
 
 
-  // Attach to all buttons with the model-btn class
-  document.querySelectorAll('.model-btn').forEach(btn => {
-    btn.addEventListener('click', createModal);
-  });
+// Attach to all buttons with the model-btn class
+document.querySelectorAll('.model-btn').forEach(btn => {
+  btn.addEventListener('click', createModal);
+});
 
 
 
 
-  // Footer
+// Footer
 
-  document.body.insertAdjacentHTML('afterend', `
+document.body.insertAdjacentHTML('afterend', `
     
     <footer class="bg-black text-white py-10 px-6">
 <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
@@ -295,11 +295,67 @@ renderNavbar();
                 </div>
             </div>
         </div>
-
         <!-- Bottom Note -->
         <div class="text-center text-sm text-gray-500 mt-6">
             Design & Developed By : <span class="text-[#84BF34]">Digital Ultra</span>
         </div>        
     </footer>
-    
     `);
+
+const moverSteps = [
+  {
+    title: "Quick Quote",
+    description: "Get an instant, no-obligation quote! Whether moving locally or interstate, we provide fast and accurate cost estimates tailored to your needs.",
+    iconPath: "https://cbdmovers.com.au/wp-content/themes/CBDMOVERSNEW/new-design/images/QuickQuote.svg"
+  },
+  {
+    title: "Book Your Move",
+    description: "Schedule your move effortlessly. We supply high-quality packing materials, professional equipment, and modern vehicles for a smooth relocation.",
+    iconPath: "https://cbdmovers.com.au/wp-content/themes/CBDMOVERSNEW/new-design/images/BookYourMove.svg"
+  },
+  {
+    title: "We Collect & Ship",
+    description: "Enjoy secure and efficient collection and shipping of your belongings, including valuables, with just one call to get started.",
+    iconPath: "https://cbdmovers.com.au/wp-content/themes/CBDMOVERSNEW/new-design/images/WeCollectShip.svg"
+  },
+  {
+    title: "We Deliver",
+    description: "Your household goods and office items are delivered safely to your new doorstep, guaranteed scratch-free and on time.",
+    iconPath: "https://cbdmovers.com.au/wp-content/themes/CBDMOVERSNEW/new-design/images/WeDeliver.svg"
+  }
+];
+
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("proccess");
+
+  let stepsHTML = moverSteps.map((step, index) => `
+    <div class="text-center mb-6 md:mb-0">
+      <div class="flex justify-center">
+        <div class="relative">
+          <div class="bg-red-600 rounded-full h-4 w-4 flex items-center justify-center">
+            <span class="text-white font-bold">${index + 1}</span>
+          </div>
+          <div class=" bg-white rounded-full h-16 w-16 flex items-center justify-center">
+            <img src='${step.iconPath}' class='h-10 w-10'>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-lg font-semibold mt-2">${step.title}</h3>
+      <p class="text-sm text-gray-400 mt-1">${step.description}</p>
+    </div>
+  `).join('');
+
+  container.innerHTML = `
+    <div class="bg-gray-800 text-white py-20 px-4">
+    <div class="text-center md:text-left mb-4 md:mb-0">
+      <h2 class="text-2xl font-bold text-center">PCM Movers Process</h2>
+      <p class="text-sm text-gray-400 mt-1  text-center">Our home and furniture removals provide the unparalleled services of packers and movers along...</p>
+    </div>
+      <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      </div>
+      <div class="container mx-auto flex flex-col md:flex-row items-center justify-around mt-8">
+        ${stepsHTML}
+      </div>
+    </div>
+  `;
+});
