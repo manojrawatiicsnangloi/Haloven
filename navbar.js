@@ -137,7 +137,7 @@ function renderNavbar() {
         ).join("");
 
         return `
-          <div class="relative group">
+          <div class="relative group ">
             <button class="hover:text-[#84BF34] flex items-center gap-1">
               ${link.text}
               <svg class="w-3 h-3 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -193,20 +193,20 @@ function renderNavbar() {
       <div id="mobile-menu" class="lg:hidden hidden bg-gray-800 text-white p-4 space-y-4 shadow-xl">
         <nav class="flex flex-col space-y-3 font-medium text-sm">
           ${navLinks
-            .map(link => {
-              if (link.sublinks) {
-                const subs = link.sublinks
-                  .map(sub => `<a href="${sub.href}" class="ml-4 block text-white">${sub.text}</a>`)
-                  .join("");
-                return `<div>
+      .map(link => {
+        if (link.sublinks) {
+          const subs = link.sublinks
+            .map(sub => `<a href="${sub.href}" class="ml-4 block text-white">${sub.text}</a>`)
+            .join("");
+          return `<div>
                           <span class="font-bold">${link.text}</span>
                           ${subs}
                         </div>`;
-              } else {
-                return `<a href="${link.href}" class="block">${link.text}</a>`;
-              }
-            })
-            .join("")}
+        } else {
+          return `<a href="${link.href}" class="block">${link.text}</a>`;
+        }
+      })
+      .join("")}
         </nav>
         <div class="flex flex-col gap-3 pt-4 border-t border-gray-200">
           ${contactHTML}
@@ -233,8 +233,6 @@ renderNavbar();
 document.querySelectorAll('.model-btn').forEach(btn => {
   btn.addEventListener('click', createModal);
 });
-
-
 
 
 // Footer
