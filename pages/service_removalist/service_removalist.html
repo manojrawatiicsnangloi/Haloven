@@ -43,7 +43,7 @@
 
                 <!-- Quote Form -->
                 <div
-                    class="mt-6 bg-lime-500 text-black rounded-full px-4 py-3 flex flex-col md:flex-row flex-wrap gap-3 items-center">
+                    class="mt-6 bg-[#84BF34] text-black rounded-full px-4 py-3 flex flex-col md:flex-row flex-wrap gap-3 items-center">
                     <div class="md:flex-1">
                         <input type="text" placeholder="Enter Location" id="from-location"
                             class="w-full px-4 py-2 bg-white rounded text-sm" />
@@ -66,7 +66,7 @@
                 <!-- Ratings -->
                 <div class="mt-6 flex items-center gap-6 text-sm text-gray-300">
                     <div>
-                        <span class="text-lime-400 font-bold">10 Years</span> <br />Experience
+                        <span class="text-[#84BF34] font-bold">10 Years</span> <br />Experience
                     </div>
                     <div class="flex items-center gap-1">
                         <span class="text-yellow-400">★★★★★</span>
@@ -107,7 +107,7 @@
 
                 <!-- Quote Form -->
                 <div
-                    class="w-full absolute mt-6 bg-lime-500 text-black rounded py-6 px-4 flex flex-col gap-4 shadow-lg">
+                    class="w-full absolute mt-6 bg-[#84BF34] text-black rounded py-6 px-4 flex flex-col gap-4 shadow-lg">
                     <input type="text" placeholder="Pickup Location"
                         class="w-full px-4 py-2 bg-white rounded text-sm focus:outline-none" />
                     <input type="text" placeholder="Drop-off Location"
@@ -125,7 +125,7 @@
         class="mt-[12rem] md:hidden md:mt-0 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-6 text-sm text-gray-300">
         <!-- Experience -->
         <div class="text-center sm:text-left">
-            <span class="text-lime-400 font-bold text-lg">10 Years</span><br>
+            <span class="text-[#84BF34] font-bold text-lg">10 Years</span><br>
             <span class="text-xs uppercase tracking-wide text-gray-400">Experience</span>
         </div>
 
@@ -344,27 +344,44 @@
     <section class="flex flex-col-reverse md:grid md:grid-cols-2">
         <!-- Left Image -->
         <!-- Right Text Block -->
-        <div class="bg-lime-400 flex flex-col justify-center items-center text-center p-10">
-            <section class="text-white px-6 py-10">
-                <h2 class="text-2xl font-bold mb-4">What to Look for in a Moving Company</h2>
-                <p class="mt-4 text-white max-w-md text-center">
+        <div class="bg-[#84BF34] flex flex-col justify-center items-center px-4 py-8 md:p-10">
+            <section class="text-white w-full max-w-xl">
+                <h2 class="text-2xl font-bold mb-4 text-center md:text-left">
+                    What to Look for in a Moving Company
+                </h2>
+
+                <p class="mt-4 text-center md:text-left">
                     What to Consider Before Hiring a House Moving Company in Perth
                 </p>
-                <ul class="list-disc list-inside space-y-3 text-white text-base text-start">
-                    <li>
-                        <strong>Experience:</strong> Select movers with proven expertise in house relocations to handle
-                        your belongings safely.
-                    </li>
-                    <li>
-                        <strong>Clear Pricing:</strong> Always get a detailed quote upfront, including any extra costs
-                        for stairs, heavy furniture, or long distances.
-                    </li>
-                    <li>
-                        <strong>Insurance:</strong> Ensure the company offers transit insurance and protection for
-                        valuable or fragile items.
-                    </li>
 
-                </ul>
+                <!-- Replacing ul with card-style list for mobile -->
+                <div class="mt-6 space-y-4">
+                    <div class="bg-white/10 rounded-lg p-4">
+                       <img src="images/pcm-icons/wc2.webp" alt="" class="w-10 h-10">
+                       <h1 class="text-xl"><strong>Experience</strong> </h1>
+                        <p class="text-white text-base">
+                            Select movers with proven expertise in house relocations to
+                            handle your belongings safely.
+                        </p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-4">
+                       <img src="images/pcm-icons/wc2.webp" alt="" class="w-10 h-10">
+                       <h1 class="text-xl"><strong>Insurance:</strong>  </h1>
+                       <p class="text-white text-base">
+                            Ensure the company offers transit insurance and protection for
+                            valuable or fragile items.
+                        </p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-4">
+                       <img src="images/pcm-icons/wc2.webp" alt="" class="w-10 h-10">
+                       <h1 class="text-xl"> <strong>Clear Pricing:</strong> </h1>
+                         <p class="text-white text-base">
+                            Always get a detailed quote upfront, including any extra
+                            costs for stairs, heavy furniture, or long distances.
+                        </p>
+                    </div>
+
+                </div>
             </section>
 
             <button onclick="createModal()"
@@ -372,6 +389,7 @@
                 BOOK YOUR MOVE TODAY
             </button>
         </div>
+
         <div class="w-full h-full">
             <img src="../../images/truck/pcm Truck 5.png" alt="MCM Team Packing" class="w-full h-full object-contain" />
         </div>
@@ -385,7 +403,7 @@
         </div>
         <!-- Right Text Block -->
 
-        <div class="bg-lime-400 flex flex-col justify-center items-center text-center p-10">
+        <div class="bg-[#84BF34] flex flex-col justify-center items-center text-center p-10">
             <h2 class="text-2xl md:text-3xl font-bold text-white relative inline-block">
                 <span class="px-2">We Care for Your Valuables</span><span>!</span>
             </h2>
@@ -440,10 +458,9 @@
     <div id="services" class="my-6 max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
     </div>
 
-
     <section class="bg-white py-16 px-4 lg:px-20">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
-            <span class="text-lime-400">REMOVAL SERVICES</span> WE OFFER
+            <span class="text-[#84BF34]">REMOVAL SERVICES</span> WE OFFER
         </h2>
 
         <div class="flex flex-col-reverse md:grid grid-cols-5 gap-10 items-start">
@@ -454,9 +471,9 @@
             <div class="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 gap-6 col-span-3">
                 <!-- Service 1 -->
                 <div class="flex items-start space-x-4">
-                    <i class="fas fa-house fa-2x text-lime-400"></i>
+                    <i class="fas fa-house fa-2x text-[#84BF34]"></i>
                     <div>
-                        <h3 class="font-bold text-lg text-lime-400">Home Moves</h3>
+                        <h3 class="font-bold text-lg text-[#84BF34]">Home Moves</h3>
                         <p class="text-gray-600 text-sm">
                             Moving your home can be daunting but not so much when our team is here to help you pack,
                             load, and transport your belongings to your new home.
@@ -466,9 +483,9 @@
 
                 <!-- Service 2 -->
                 <div class="flex items-start space-x-4">
-                    <i class="fas fa-briefcase fa-2x text-lime-400"></i>
+                    <i class="fas fa-briefcase fa-2x text-[#84BF34]"></i>
                     <div>
-                        <h3 class="font-bold text-lg text-lime-400">Office Moves</h3>
+                        <h3 class="font-bold text-lg text-[#84BF34]">Office Moves</h3>
                         <p class="text-gray-600 text-sm">
                             Our office moves are designed to ensure a smooth move while minimising downtime. So, no
                             more letting your move disrupt your business.
@@ -478,9 +495,9 @@
 
                 <!-- Service 3 -->
                 <div class="flex items-start space-x-4">
-                    <i class="fas fa-route fa-2x text-lime-400"></i>
+                    <i class="fas fa-route fa-2x text-[#84BF34]"></i>
                     <div>
-                        <h3 class="font-bold text-lg text-lime-400">Interstate Moves</h3>
+                        <h3 class="font-bold text-lg text-[#84BF34]">Interstate Moves</h3>
                         <p class="text-gray-600 text-sm">
                             If you're relocating to another state, avail the assistance of our Melbourne City movers
                             and take care of your long-distance moves efficiently.
@@ -489,9 +506,9 @@
                 </div>
 
                 <div class="flex items-start space-x-4">
-                    <i class="fas fa-couch fa-2x text-lime-400"></i>
+                    <i class="fas fa-couch fa-2x text-[#84BF34]"></i>
                     <div>
-                        <h3 class="font-bold text-lg text-lime-400">Furniture Moves</h3>
+                        <h3 class="font-bold text-lg text-[#84BF34]">Furniture Moves</h3>
                         <p class="text-gray-600 text-sm">
                             Whether you're relocating a single piece or an entire household's furniture, we handle
                             everything with care.
@@ -501,9 +518,9 @@
 
                 <!-- Service 5 -->
                 <div class="flex items-start space-x-4">
-                    <i class="fas fa-trash-alt fa-2x text-lime-400"></i>
+                    <i class="fas fa-trash-alt fa-2x text-[#84BF34]"></i>
                     <div>
-                        <h3 class="font-bold text-lg text-lime-400">Rubbish Moves</h3>
+                        <h3 class="font-bold text-lg text-[#84BF34]">Rubbish Moves</h3>
                         <p class="text-gray-600 text-sm">
                             We remove waste and unwanted clutter from your space promptly and responsibly.
                         </p>
@@ -512,9 +529,9 @@
 
                 <!-- Service 6 -->
                 <div class="flex items-start space-x-4">
-                    <i class="fas fa-box-open fa-2x text-lime-400"></i>
+                    <i class="fas fa-box-open fa-2x text-[#84BF34]"></i>
                     <div>
-                        <h3 class="font-bold text-lg text-lime-400">Packing Services</h3>
+                        <h3 class="font-bold text-lg text-[#84BF34]">Packing Services</h3>
                         <p class="text-gray-600 text-sm">
                             We offer top-notch packing services to ensure the safety of your items during the move.
                         </p>
@@ -529,7 +546,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="bg-[#53565a] text-white py-12 md:pb-12 pb-[400px] relative overflow-hidden">
         <!-- Left Mover -->
@@ -581,11 +597,6 @@
                 </a>
             </div>
         </div>
-        <!-- Get a Quote Button -->
-        <div
-            class="absolute right-0 top-1/2 -translate-y-1/2 transform rotate-90 origin-right bg-red-900 text-white font-bold px-4 py-2 rounded-l">
-            Get a Quote
-        </div>
     </section>
 
     <script src="js/what_make_best.js"></script>
@@ -634,7 +645,7 @@
                 <textarea placeholder="Your Message" rows="4"
                     class="w-full p-2 bg-gray-700 border border-[#84BF34] rounded outline-none focus:ring-2 focus:ring-[#84BF34]"></textarea>
                 <button type="submit"
-                    class="bg-[#84BF34] text-gray-800 font-semibold px-6 py-2 rounded hover:bg-lime-600">Submit</button>
+                    class="bg-[#84BF34] text-gray-800 font-semibold px-6 py-2 rounded hover:bg-[#84BF34]">Submit</button>
             </form>
         </div>
     </div>
