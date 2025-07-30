@@ -106,16 +106,11 @@ const buttons = [
       "bg-[#84BF34] hover:bg-lime-600 text-black font-bold py-2 px-4 rounded transition"
   }
 ];
-
 function createLink({ text, href, isPhone = false }) {
   if (isPhone) {
     return `
-      <a href="${href}" class="flex items-center gap-2 text-[#84BF34] font-semibold whitespace-nowrap">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M3 5h2l3 5-3 5H3M21 5h-2l-3 5 3 5h2M7 20h10" />
-        </svg>
-        ${text}
+      <a href="${href}" class="flex items-center gap-2 text-[#84BF34] font-semibold">
+        <i class="fas fa-phone text-[#84BF34]"></i>${text}
       </a>`;
   } else {
     return `<a href="${href}" class="hover:text-[#84BF34]">${text}</a>`;
@@ -137,31 +132,22 @@ function renderNavbar() {
   const navHTML = navLinks
     .map(link => {
       if (link.sublinks) {
-        const half = Math.ceil(link.sublinks.length / 2);
-        const firstCol = link.sublinks.slice(0, half);
-        const secondCol = link.sublinks.slice(half);
-
-        const renderCol = col =>
-          col
-            .map(
-              sub =>
-                `<a href="${sub.href}" class="block px-4 py-2 text-sm text-black hover:text-[#84BF34] whitespace-nowrap">${sub.text}</a>`
-            )
-            .join("");
+        const subMenuItems = link.sublinks.map(sub =>
+          `<a href="${sub.href}" class="block px-4 py-2 text-sm text-black hover:text-[#84BF34]">${sub.text}</a>`
+        ).join("");
 
         return `
-        <div class="relative group">
-          <a href="${link.href}" class="hover:text-[#84BF34] flex items-center gap-1">
-            ${link.text}
-            <svg class="w-3 h-3 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </a>
-          <div class="absolute left-0 top-3 mt-2 hidden group-hover:grid grid-cols-2 gap-4 p-4 bg-white shadow-xl rounded z-50 min-w-[400px]">
-            <div class="flex flex-col">${renderCol(firstCol)}</div>
-            <div class="flex flex-col">${renderCol(secondCol)}</div>
-          </div>
-        </div>`;
+          <div class="relative group">
+            <button class="hover:text-[#84BF34] flex items-center gap-1">
+              ${link.text}
+              <svg class="w-3 h-3 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="absolute left-0 top-full mt-2 hidden group-hover:block bg-white shadow-xl rounded z-50 min-w-[200px]">
+              ${subMenuItems}
+            </div>
+          </div>`;
       } else {
         return `<a href="${link.href}" class="hover:text-[#84BF34]">${link.text}</a>`;
       }
@@ -172,32 +158,75 @@ function renderNavbar() {
     .map(btn => `<button class="${btn.class}" onclick="createModal()">${btn.text}</button>`)
     .join("");
 
-
   const html = `
-    <div class="bg-black text-white shadow-md">
-      <div class="xl:mx-4 md:mx-3 flex items-center justify-between py-3">
+    <header class="bg-black text-white shadow-md relative z-50">
+      <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <!-- Logo -->
         <a href="${logo.link}" class="flex items-center gap-2">
-          <img src="${logo.src}" alt="${logo.alt}" class="h-20" />
+          <img src="${logo.src}" alt="${logo.alt}" class="h-16 md:h-20" />
         </a>
-        <div class="flex flex-col">
-          <div class="hidden lg:flex items-center gap-4 text-sm uppercase font-medium ml-auto">
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex flex-col ml-auto w-full">
+          <div class="flex justify-end items-center gap-4 text-sm uppercase font-medium">
             ${contactHTML}
           </div>
-          <nav class="hidden lg:flex my-3 space-x-6 font-medium uppercase text-sm tracking-wide" style="align-items: self-end;">
-            <div class="flex items-center space-x-6 relative">
+          <nav class="flex justify-between items-center mt-3 space-x-6 font-medium uppercase text-sm tracking-wide">
+            <div class="flex items-center space-x-6">
               ${navHTML}
+            </div>
+            <div class="flex gap-2">
               ${buttonHTML}
             </div>
           </nav>
         </div>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="lg:hidden text-white" id="mobile-menu-toggle">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
       </div>
-    </div>`;
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden bg-gray-800 text-white p-4 space-y-4 shadow-xl">
+        <nav class="flex flex-col space-y-3 font-medium text-sm">
+          ${navLinks
+            .map(link => {
+              if (link.sublinks) {
+                const subs = link.sublinks
+                  .map(sub => `<a href="${sub.href}" class="ml-4 block text-white">${sub.text}</a>`)
+                  .join("");
+                return `<div>
+                          <span class="font-bold">${link.text}</span>
+                          ${subs}
+                        </div>`;
+              } else {
+                return `<a href="${link.href}" class="block">${link.text}</a>`;
+              }
+            })
+            .join("")}
+        </nav>
+        <div class="flex flex-col gap-3 pt-4 border-t border-gray-200">
+          ${contactHTML}
+        </div>
+        <div class="flex flex-col gap-3 pt-2">
+          ${buttonHTML}
+        </div>
+      </div>
+    </header>
+  `;
 
   document.getElementById("navbar").innerHTML = html;
+
+  // Mobile menu toggle
+  document.getElementById("mobile-menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+  });
 }
 
 renderNavbar();
-
 
 
 // Attach to all buttons with the model-btn class
