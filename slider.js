@@ -1,53 +1,86 @@
 const testimonials = [
-      {
-        name: "James T. Richmond",
-        city: "Perth City",
-        timeAgo: "a month ago",
-        rating: 5,
-        comment: "Moved my entire apartment in just a few hours. Super professional and affordable. I’ll be using them again for sure.",
-        image: "https://e7.pngegg.com/pngimages/956/662/png-clipart-elon-musk-elon-musk-speaking-celebrities-corporate-thumbnail.png"
-      },
-      {
-        name: "James T. Richmond",
-        city: "Perth City",
-        timeAgo: "a month ago",
-        rating: 5,
-        comment: "Moved my entire apartment in just a few hours. Super professional and affordable. I’ll be using them again for sure.",
-        image: "https://e7.pngegg.com/pngimages/956/662/png-clipart-elon-musk-elon-musk-speaking-celebrities-corporate-thumbnail.png"
-      },
-      {
-        name: "James T. Richmond",
-        city: "Perth City",
-        timeAgo: "a month ago",
-        rating: 5,
-        comment: "Moved my entire apartment in just a few hours. Super professional and affordable. I’ll be using them again for sure.",
-        image: "https://e7.pngegg.com/pngimages/956/662/png-clipart-elon-musk-elon-musk-speaking-celebrities-corporate-thumbnail.png"
-      },
-      {
-        name: "James T. Richmond",
-        city: "Perth City",
-        timeAgo: "a month ago",
-        rating: 5,
-        comment: "Moved my entire apartment in just a few hours. Super professional and affordable. I’ll be using them again for sure.",
-        image: "https://e7.pngegg.com/pngimages/956/662/png-clipart-elon-musk-elon-musk-speaking-celebrities-corporate-thumbnail.png"
-      },
-      {
-        name: "James T. Richmond",
-        city: "Perth City",
-        timeAgo: "a month ago",
-        rating: 5,
-        comment: "Moved my entire apartment in just a few hours. Super professional and affordable. I’ll be using them again for sure.",
-        image: "https://e7.pngegg.com/pngimages/956/662/png-clipart-elon-musk-elon-musk-speaking-celebrities-corporate-thumbnail.png"
-      },
-      {
-        name: "James T. Richmond",
-        city: "Perth City",
-        timeAgo: "a month ago",
-        rating: 5,
-        comment: "Moved my entire apartment in just a few hours. Super professional and affordable. I’ll be using them again for sure.",
-        image: "https://e7.pngegg.com/pngimages/956/662/png-clipart-elon-musk-elon-musk-speaking-celebrities-corporate-thumbnail.png"
-      },
-    ];
+  {
+    name: "Sarah Thompson",
+    city: "Perth",
+    rating: 5,
+    timeAgo: "2 days ago",
+    image: "images/person-icon.webp",
+    comment: "Perth Central Movers made our house move completely stress-free. The team was professional, careful with our furniture, and everything arrived without a single scratch. Highly recommended for anyone looking for reliable Perth removalists!"
+  },
+  {
+    name: "Michael Anderson",
+    city: "Perth",
+    rating: 5,
+    timeAgo: "3 days ago",
+    image: "images/person-icon.webp",
+    comment: "We hired Perth Central Movers for our office relocation, and they handled everything perfectly. From packing to setting up at the new place, the whole process was smooth and on time. Great service at a fair price."
+  },
+  {
+    name: "Emily Parker",
+    city: "Fremantle",
+    rating: 4,
+    timeAgo: "5 days ago",
+    image: "images/person-icon.webp",
+    comment: "I booked their men-with-truck service for a small apartment move, and it was fantastic. Quick response, transparent pricing, and very friendly staff. I’ll definitely use them again for my next move."
+  },
+  {
+    name: "James Wilson",
+    city: "Perth",
+    rating: 5,
+    timeAgo: "1 week ago",
+    image: "images/person-icon.webp",
+    comment: "One of the best moving experiences I’ve ever had. The team was punctual, well-prepared, and extremely careful with our fragile items. Perth Central Movers really live up to their reputation."
+  },
+  {
+    name: "Sophie Bennett",
+    city: "Subiaco",
+    rating: 5,
+    timeAgo: "1 week ago",
+    image: "images/person-icon.webp",
+    comment: "Perth Central Movers were amazing! The booking process was simple, and the movers were extremely careful with all our belongings. Everything arrived in perfect condition."
+  },
+  {
+    name: "George Mitchell",
+    city: "Joondalup",
+    rating: 4,
+    timeAgo: "2 weeks ago",
+    image: "images/person-icon.webp",
+    comment: "I needed a last-minute move, and they accommodated us without any hassle. The team was efficient, friendly, and got the job done faster than expected."
+  },
+  {
+    name: "Hannah Lewis",
+    city: "Cannington",
+    rating: 5,
+    timeAgo: "2 weeks ago",
+    image: "images/person-icon.webp",
+    comment: "From the first call to the final delivery, their customer service was outstanding. The movers were professional and treated our furniture with great care."
+  },
+  {
+    name: "Liam Edwards",
+    city: "Bayswater",
+    rating: 4,
+    timeAgo: "3 weeks ago",
+    image: "images/person-icon.webp",
+    comment: "I’ve used other movers before, but Perth Central Movers truly stood out. Affordable prices, punctual service, and very well-organized team."
+  },
+  {
+    name: "Isabella Clark",
+    city: "Osborne Park",
+    rating: 5,
+    timeAgo: "3 weeks ago",
+    image: "images/person-icon.webp",
+    comment: "Our office relocation went smoothly thanks to their professional approach. Zero damage, on-time delivery, and very cooperative staff throughout the process."
+  },
+  {
+    name: "Ethan Wright",
+    city: "Perth",
+    rating: 5,
+    timeAgo: "4 weeks ago",
+    image: "images/person-icon.webp",
+    comment: "Highly recommend Perth Central Movers for anyone relocating in Perth. They made the entire process stress-free and were incredibly polite and helpful."
+  }
+];
+
 
     // ✅ Dynamically inject slides
     const wrapper = document.getElementById("testimonial-wrapper");
@@ -56,13 +89,12 @@ const testimonials = [
         <div class="swiper-slide">
           <div class="bg-white p-6 rounded-xl shadow text-left max-w-sm mx-auto">
             <div class="flex items-center gap-4 mb-4">
-              <img src="${t.image}" alt="${t.name}" class="w-16 h-16 rounded-full object-cover" />
+               <i class="fas fa-user text-3xl text-gray-400"></i>
               <div>
                 <h3 class="font-bold text-sm">${t.name}</h3>
-                <p class="text-xs text-gray-500">${t.city}</p>
                 <div class="text-yellow-500 text-sm">
-                  ${'★'.repeat(t.rating)}${'☆'.repeat(5 - t.rating)}
-                  <span class="text-xs text-gray-400 ml-2">${t.timeAgo}</span>
+                  ${'★'.repeat(t.rating)}${'☆'.repeat(5 - t?.rating)}
+                  <span class="text-xs text-gray-400 ml-2">${t?.timeAgo}</span>
                 </div>
               </div>
             </div>
