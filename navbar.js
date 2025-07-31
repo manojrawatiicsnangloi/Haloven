@@ -132,10 +132,10 @@ function renderNavbar() {
   const navHTML = navLinks
     .map(link => {
       if (link.sublinks) {
-        const subMenuItems = link.sublinks.map(sub =>
+        let subMenuItems = link.sublinks.map(sub =>
           `<a href="${sub.href}" class="block px-4 py-2 text-sm text-black hover:text-[#84BF34]">${sub.text}</a>`
         ).join("");
-
+        subMenuItems = `<div class='grid grid-cols-2'>${subMenuItems}</div>`;
         return `
           <div class="relative group ">
             <button class="hover:text-[#84BF34] flex items-center gap-1">
@@ -144,7 +144,7 @@ function renderNavbar() {
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="absolute left-0 top-full mt-2 hidden group-hover:block bg-white shadow-xl rounded z-50 min-w-[200px]">
+            <div class="absolute left-0 top-3 mt-2 hidden group-hover:block bg-white shadow-xl rounded z-50 w-[420px]">
               ${subMenuItems}
             </div>
           </div>`;
@@ -160,22 +160,22 @@ function renderNavbar() {
 
   const html = `
     <header class="bg-black text-white shadow-md relative z-50">
-      <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="container  px-4 py-3 flex items-center justify-between">
         <!-- Logo -->
         <a href="${logo.link}" class="flex items-center gap-2">
           <img src="${logo.src}" alt="${logo.alt}" class="h-16 md:h-20" />
         </a>
 
         <!-- Desktop Menu -->
-        <div class="hidden lg:flex flex-col ml-auto w-full">
+        <div class="hidden lg:flex flex-col  w-full">
           <div class="flex justify-end items-center gap-4 text-sm uppercase font-medium">
             ${contactHTML}
           </div>
-          <nav class="flex justify-between items-center mt-3 space-x-6 font-medium uppercase text-sm tracking-wide">
-            <div class="flex items-center space-x-6">
+          <nav class="flex  items-center mt-3 gap-5 font-medium uppercase text-sm tracking-wide">
+            <div class="flex items-center space-x-6 ml-auto">
               ${navHTML}
             </div>
-            <div class="flex gap-2">
+            <div class="flex gap-2 ">
               ${buttonHTML}
             </div>
           </nav>
