@@ -75,22 +75,22 @@ const navLinks = [
     text: "Moving Home",
     href: "#",
     sublinks: [
-      { text: "Antique Removalists", href: "/pages/antique/at.html" },
-      { text: "Commercial Removals", href: "/pages/commercial/com.html" },
-      { text: "Flats Removals", href: "/pages/flats/fl.html" },
-      { text: "Furniture Removals", href: "/pages/furniture/fr.html" },
-      { text: "Hotel Melbourne", href: "/pages/hotel/ht.html" },
-      { text: "Local Removals", href: "/pages/local/lc.html" },
-      { text: "Piano Removals", href: "/pages/piano/pno.html" },
-      { text: "Retirement Removals", href: "/pages/retirment/rt.html" },
-      { text: "School Removals", href: "/pages/school/sh.html" },
+      { text: "Antique Removalists", href: "/service/antique-removalist" },
+      { text: "Flats Removals", href: "/service/flat-removalist" },
+      { text: "Hotel Melbourne", href: "/service/hotel-removalist" },
+      { text: "Piano Removals", href: "/service/piano-removalist" },
+      { text: "Office Removals", href: "/service/office-removalist" },
+      { text: "Packing Removals", href: "/service/packing-removalist" },
+      { text: "Furniture Removals", href: "/service/furniture-removalist" },
+      { text: "Retirement Removals", href: "/service/retirement-removalist" },
+      { text: "School Removals", href: "/service/school-removalist" },
     ]
   },
   {
-    text: "Moving Office",
-    href: "/pages/office/of.html",
+    text: "Antique Removalists",
+    href: "/service/antique-removalist",
   },
-  { text: "Service Removalist", href: "/pages/service_removalist/service_removalist.html" }
+  { text: "Office Removalist", href: "/service/office-removalist" }
 ];
 
 

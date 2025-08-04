@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <script src="tailwind.js"></script>
+  <script src="tailwind-css.js"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .font-bitter {
+      font-family: "Bitter", serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header id="navbar"></header>
+  <script src="../../navbar.js"></script>
+  <!-- Navbar -->
+  <!-- Home Page -->
+  <section class="bg-[#53565a] text-white py-12 px-6 md:block hidden">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-center">
+      <!-- Left Content -->
+      <div>
+        <h1 class="text-4xl font-bold leading-tight">
+       Flats Removalists Perth <br class="hidden md:block" />
+        </h1>
+        <p class="mt-4 text-gray-300">
+          Looking for reliable and affordable flat removalists in Perth? Perth Central Movers specialises in stress-free
+          apartment and unit relocations across the city and surrounding suburbs. Whether you're moving from a high-rise
+          apartment, studio unit, or multi-level complex, our experienced team knows how to handle the unique challenges
+          of flat removals, including stairs, elevators, tight access points, and limited parking.
+          With a strong focus on efficiency and care, we ensure that your belongings are safely packed, carefully moved,
+          and delivered on time. From small furniture and fragile items to heavy appliances and personal valuables, our
+          team treats every move with professionalism and respect. We also offer flexible scheduling options, so whether
+          you need to move during the week, on a weekend, or outside standard hours, we’re ready to help.
+
+        </p>
+
+
+        <!-- Quote Form -->
+        <div
+          class="mt-6 bg-[#84BF34] text-black rounded-full px-4 py-3 flex flex-col md:flex-row flex-wrap gap-3 items-center">
+          <div class="md:flex-1">
+            <input type="text" placeholder="Enter Location" id="from-location"
+              class="w-full px-4 py-2 bg-white rounded text-sm" />
+          </div>
+          <div class="md:flex-1">
+            <input type="text" id="from-location" placeholder="Enter Location"
+              class="w-full px-4 py-2 rounded bg-white text-sm" />
+          </div>
+          <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">
+            Get a Free Quote
+          </button>
+        </div>
+
+        <!-- Service Tags -->
+        <div class="mt-6 flex gap-6 text-white text-sm font-medium">
+          <!-- <a href="#" class="border-b border-white">Interstate</a>
+                    <a href="#" class="border-b border-white">Business</a>
+                    <a href="#" class="border-b border-white">Storage</a> -->
+        </div>
+        <!-- Ratings -->
+        <div class="mt-6 flex items-center gap-6 text-sm text-gray-300">
+          <!-- <div>
+                        <span class="text-[#84BF34] font-bold">10 Years</span> <br />Experience
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="text-yellow-400">★★★★★</span>
+                        <span class="text-white">(4.2)</span>
+                        <span>166</span>
+                        <img src="https://demo.alphabet26.in/assets/images/allImages/Google.webp" alt="Google"
+                            class="h-6" />
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <img src="https://demo.alphabet26.in/assets/images/allImages/Trustpilot.webp" alt="Trustpilot"
+                            class="h-6" />
+                    </div> -->
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="w-full">
+        <img src="images/Fineimg/pcm Truck 4.webp" alt="MCM" class="rounded-lg shadow-xl w-full block" />
+      </div>
+    </div>
+  </section>
+  <section class="relative text-white py-12 px-6 md:hidden bg-cover bg-center"
+    style="background-image: url('../../images/truck/pcm%20Truck%201.png')">
+    <!-- Black Overlay -->
+    <div class="absolute inset-0 bg-black/60 z-0"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-center">
+      <!-- Left Content -->
+      <div>
+        <h1 class="text-4xl font-bold leading-tight">
+          Stress-Free Moves Start Here
+        </h1>
+        <p class="mt-4 text-gray-300">
+          Trusted removalists for Home, Office & Storage — Over 13 years of
+          experience with a 4.8-star rating.
+        </p>
+
+        <!-- Quote Form -->
+        <div class="w-full absolute mt-6 bg-[#84BF34] text-black rounded py-6 px-4 flex flex-col gap-4 shadow-lg">
+          <input type="text" placeholder="Pickup Location"
+            class="w-full px-4 py-2 bg-white rounded text-sm focus:outline-none" />
+          <input type="text" placeholder="Drop-off Location"
+            class="w-full px-4 py-2 bg-white rounded text-sm focus:outline-none" />
+          <button class="bg-black text-white px-6 py-2 rounded text-sm hover:bg-gray-900 transition">
+            Get a Free Quote
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="h-[200px] md:h-0"></section>
+
+  <section class="bg-[#84bf34] text-white py-10 flex">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-8 text-white">
+        Trusted by Thousands of Customers Like You
+      </h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+        <!-- Review Card -->
+        <div class="space-y-2">
+          <img src="images/pcm-logo/Google.webp" alt="Google" class="h-20 mx-auto" />
+          <div class="text-yellow-400 text-lg">★★★★★</div>
+          <p class="text-sm text-white/90">4.2 (162 Reviews)</p>
+        </div>
+
+        <div class="space-y-2">
+          <img src="images/pcm-logo/Trustpilot.webp" alt="Trustpilot" class="h-20 mx-auto" />
+          <div class="text-yellow-400 text-lg">★★★★★</div>
+          <p class="text-sm text-white/90">4.5 (210 Reviews)</p>
+        </div>
+
+        <div class="space-y-2">
+          <img src="images/pcm-logo/Facebook.webp" alt="Facebook" class="h-20 mx-auto" />
+          <div class="text-yellow-400 text-lg">★★★★★</div>
+          <p class="text-sm text-white/90">4.7 (320 Reviews)</p>
+        </div>
+
+        <!-- <div class="space-y-2">
+                    <img src="images/pcm-logo/Find a mover.webp" alt="Find a Mover" class="h-20 mx-auto" />
+                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                    <p class="text-sm text-white/90">4.6 (98 Reviews)</p>
+                </div> -->
+
+        <div class="space-y-2">
+          <img src="images/pcm-logo/product review.webp" alt="Product Review" class="h-20 mx-auto" />
+          <div class="text-yellow-400 text-lg">★★★★★</div>
+          <p class="text-sm text-white/90">4.8 (187 Reviews)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Service Section  -->
+  <section class="bg-[white] text-gray-700 md:py-16">
+    <div class="container mx-auto px-6 text-center">
+      <!-- Heading -->
+      <h2 class="text-3xl font-bold">Our Moving Services</h2>
+      <p class="max-w-2xl mx-auto mb-2">
+        Our team's goal is to deliver a standard of excellence that surpasses
+        customer expectations and delivers on service, quality, and value. You
+        can place your trust in our professional team to remove the stress and
+        make your move easy.
+      </p>
+      <!-- Service Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="text-black rounded shadow-md overflow-hidden">
+          <img src="./images/Fineimg/3.webp" alt="Door to Door" class="w-full h-60 object-cover" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-[#00529b]">
+              Specialised Packing and Custom Crating
+            </h3>
+            <p class="text-sm mt-2 mb-6 leading-relaxed text-justify">
+
+              Every antique requires unique protection to guard against the
+              rigours of transit. We utilise museum-quality packing materials
+              such as acid-free tissue paper, soft blankets, foam padding, and
+              bubble wrap to safeguard delicate surfaces from scratches,
+              dents, and abrasions. For particularly fragile or valuable
+              items, our skilled team designs and constructs custom-built
+              wooden crates tailored precisely to the shape and dimensions of
+              your antiques. This bespoke crating system offers superior shock
+              absorption and weather resistance, preventing moisture damage
+              and minimizing the risk of shifting during transport.
+            </p>
+            <button onclick="createModal()"
+              class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
+              Learn more...
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white text-black rounded shadow-md overflow-hidden">
+          <img src="./images/Fineimg/5.webp" alt="Commercial Movers" class="w-full h-60 object-cover" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-[#00529b]">
+              Delicate Handling by Experienced Professionals
+            </h3>
+            <p class="text-sm mt-2 mb-6 leading-relaxed text-justify">
+              Handling antiques demands a rare blend of care, knowledge, and respect for craftsmanship. Our removalists
+              are specially trained in antique handling techniques, ensuring every piece is treated as a fragile work of
+              art. Whether you’re entrusting us with an intricate Victorian cabinet, an exquisite porcelain collection,
+              or a rare and delicate grandfather clock, our team carefully plans each lift, move, and load to prevent
+              damage. We understand the balance between cautious handling and efficient operation, maintaining the
+              highest standards of professionalism. &nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="createModal()"
+              class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
+              Learn more...
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white text-black rounded shadow-md overflow-hidden">
+          <img src="./images/Fineimg/9.webp" alt="Residential Movers" class="w-full h-60 object-cover" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-[#00529b]">
+              Climate-Controlled Transportation for Sensitive Items
+            </h3>
+            <p class="text-sm mt-2 mb-6 leading-relaxed text-justify">
+              Many antiques, especially those made of wood, textiles, or canvas, are highly sensitive to fluctuations in
+              temperature and humidity. Our modern, climate-controlled vehicles are equipped to maintain stable
+              environmental conditions throughout transit, reducing the risk of warping, cracking, or fading. This
+              specialised transportation ensures your antiques’ integrity and value are preserved, no matter the
+              distance or weather conditions.
+            </p>
+
+            <button onclick="createModal()"
+              class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition mt-10">
+              Learn more...
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white text-black rounded shadow-md overflow-hidden">
+          <img src="./images/Fineimg/4.webp" alt="Packing Services" class="w-full h-60 object-cover" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-[#00529b]">
+              Expert Disassembly and Reassembly Services
+            </h3>
+            <p class="text-sm mt-2 mb-6 leading-relaxed text-justify">
+              Large or complex antique furniture often requires careful disassembly to navigate narrow staircases,
+              doorways, or tight hallways safely. Our removalists possess the expertise to dismantle and securely pack
+              these pieces, then expertly reassemble them at your new location. This meticulous process minimizes the
+              risk of structural damage and ensures your antiques are restored to their original beauty and
+              functionality.
+            </p>
+            <br>
+            <button onclick="createModal()"
+              class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
+              Learn more...
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white text-black rounded shadow-md overflow-hidden">
+          <img src="./images/Fineimg/12.webp" alt="Storage Solutions" class="w-full h-60 object-cover" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-[#00529b]">
+              Insurance and Valuation Assistance for Peace of Mind
+            </h3>
+            <p class="text-sm mt-2 mb-6 leading-relaxed text-justify">
+              We recognise the importance of protecting your valuable antiques throughout the move. Perth Central Movers
+              provides guidance on comprehensive insurance coverage tailored for antique relocation, giving you
+              financial protection against unforeseen events. Additionally, we can coordinate with professional valuers
+              before transit, helping document the condition and value of your items so that you have full peace of mind
+              throughout the journey.
+            </p>
+            <button onclick="createModal()"
+              class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
+              Learn more...
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white text-black rounded shadow-md overflow-hidden">
+          <img src="./images/Fineimg/2.webp" alt="Local & Long Distance" class="w-full h-60 object-cover" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-[#00529b]">
+              Local and Interstate Antique Moving Expertise
+            </h3>
+            <p class="text-sm mt-2 mb-6 leading-relaxed text-justify">
+              Whether your antiques are moving within Perth or being transported interstate, our team has the knowledge,
+              experience, and logistical capabilities to manage all aspects of the move. We carefully plan routes,
+              timing, and handling procedures to guarantee timely, safe delivery regardless of distance. Our commitment
+              to excellence ensures that your antiques receive the same careful treatment whether moving across the
+              street or the country
+            </p>
+            <br>
+            <button onclick="createModal()"
+              class="inline-block w-full bg-[#84bf34] text-white font-semibold py-2 px-4 text-sm text-center rounded hover:bg-[#76aa2e] transition">
+              Learn more...
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Section -->
+  <section class="relative bg-cover bg-center bg-no-repeat py-20" style="
+        background-image: url('images/pcm-images/PCM\ why\ choose\ us.webp');
+      ">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <!-- Overlay -->
+    <div class="relative container mx-auto px-6 text-white z-10">
+      <h2 class="text-4xl font-bold text-center mb-12">Why Choose Us</h2>
+      <div id="whyChooseUsCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <section class="flex flex-col-reverse md:grid md:grid-cols-2">
+    <!-- Left Image -->
+    <!-- Right Text Block -->
+    <div class="bg-[#84BF34] flex flex-col justify-center items-center px-4 py-8 md:p-10">
+      <section class="text-white w-full max-w-xl">
+        <h2 class="text-2xl md:text-4xl font-bold mb-4 text-center">
+          What to Look for in a Moving Company
+        </h2>
+
+        <p class="mt-4 text-center">
+          What to Consider Before Hiring a House Moving Company in Perth
+        </p>
+
+        <!-- Replacing ul with card-style list for mobile -->
+        <div class="mt-6 space-y-4 text-center">
+          <div class="bg-white/10 rounded-lg p-4 flex flex-col items-center justify-center">
+            <img src="images/pcm-icons/wc1.webp" alt="" class="w-10 h-10" />
+            <h1 class="text-xl"><strong>Experience</strong></h1>
+            <p class="text-white text-base">
+              Select movers with proven expertise in house relocations to
+              handle your belongings safely.
+            </p>
+          </div>
+          <div class="bg-white/10 rounded-lg p-4 flex flex-col items-center justify-center">
+            <img src="images/pcm-icons/wc2.webp" alt="" class="w-10 h-10" />
+            <h1 class="text-xl"><strong>Insurance</strong></h1>
+            <p class="text-white text-base">
+              Ensure the company offers transit insurance and protection for
+              valuable or fragile items.
+            </p>
+          </div>
+          <div class="bg-white/10 rounded-lg p-4 flex flex-col items-center justify-center">
+            <img src="images/pcm-icons/wc3.webp" alt="" class="w-10 h-10" />
+            <h1 class="text-xl"><strong>Clear Pricing</strong></h1>
+            <p class="text-white text-base">
+              Always get a detailed quote upfront, including any extra costs
+              for stairs, heavy furniture, or long distances.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <button onclick="createModal()"
+        class="mt-6 bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-gray-900 transition">
+        BOOK YOUR MOVE TODAY
+      </button>
+    </div>
+
+    <div class="md:w-full md:h-full h-[300px] bg-cover bg-no-repeat"
+      style="background-image: url('./images/newimg/5.png')"></div>
+  </section>
+
+  <section class="grid md:grid-cols-2">
+    <!-- Left Image -->
+
+    <div class="md:w-full md:h-full h-[300px] bg-right-bottom bg-cover bg-no-repeat"
+      style="background-image: url('./images/newimg/6.png')"></div>
+    <!-- Right Text Block -->
+    <div class="bg-[#84BF34] flex flex-col justify-center items-center px-4 py-8 md:p-10">
+      <section class="text-white w-full max-w-xl">
+        <h2 class="text-2xl md:text-4xl font-bold mb-4 text-center">
+          <span class="px-2">We Care for Your Valuables</span><span>!</span>
+        </h2>
+
+        <p class="mt-4 text-center">
+          Our team handles your belongings with extreme care and
+          professionalism.
+        </p>
+
+        <div class="mt-6 space-y-4 text-center">
+          <div class="bg-white/10 rounded-lg p-4 flex flex-col items-center justify-center">
+            <img src="images/pcm-icons/wc1.webp" alt="Customer Feedback" class="w-10 h-10" />
+            <h3 class="text-xl font-semibold">Customer Feedback</h3>
+            <p class="text-white text-base">
+              Check online reviews to see other customers’ experiences and
+              service quality.
+            </p>
+          </div>
+
+          <div class="bg-white/10 rounded-lg p-4 flex flex-col items-center justify-center">
+            <img src="images/pcm-icons/wc2.webp" alt="Additional Services" class="w-10 h-10" />
+            <h3 class="text-xl font-semibold">Additional Services</h3>
+            <p class="text-white text-base">
+              Look for options like packing, unpacking, and furniture assembly
+              to make the move easier.
+            </p>
+          </div>
+
+          <div class="bg-white/10 rounded-lg p-4 flex flex-col items-center justify-center">
+            <img src="images/pcm-icons/wc3.webp" alt="Local Knowledge" class="w-10 h-10" />
+            <h3 class="text-xl font-semibold">Local Knowledge</h3>
+            <p class="text-white text-base">
+              Movers familiar with Perth’s suburbs and access points can plan
+              faster, more efficient routes.
+            </p>
+          </div>
+
+          <div class="bg-white/10 rounded-lg p-4 flex flex-col items-center justify-center">
+            <img src="images/pcm-icons/wc4.webp" alt="Good Communication" class="w-10 h-10" />
+            <h3 class="text-xl font-semibold">Good Communication</h3>
+            <p class="text-white text-base">
+              Choose a team that responds quickly and supports you throughout
+              the moving process.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <button onclick="createModal()"
+        class="mt-6 bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-gray-900 transition">
+        BOOK YOUR MOVE TODAY
+      </button>
+    </div>
+  </section>
+
+  <section id="proccess"></section>
+
+  <section class="py-20 bg-[#84BF34]">
+    <h2 class="text-3xl font-bold text-center text-black mb-10">What our clients say</h2>
+    <div class="swiper testimonial-swiper w-full px-4 md:px-20">
+      <div class="swiper-wrapper" id="testimonial-wrapper"></div>
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </section>
+
+  <!-- Blog Slider -->
+  <section class="py-20 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Latest from our blog</h2>
+    <div class="swiper pcm-swiper w-full px-4 md:px-20">
+      <div class="swiper-wrapper" id="pcm-blog-slider"></div>
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </section>
+
+  <!-- What Make Us Best -->
+  <h2 class="text-3xl font-bold mb-2 text-center py-4">
+    What Makes Us the Best Removalists in Perth?
+  </h2>
+  <div id="services" class="my-6 max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6"></div>
+
+  <section class="bg-white py-16 px-4 lg:px-20">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">
+      <span class="text-[#84BF34]">Benefits of Hiring </span> Perth Central
+      Movers
+    </h2>
+
+    <div class="flex flex-col-reverse md:grid grid-cols-5 gap-10 items-start">
+      <!-- Left Column (3 Services) -->
+
+      <!-- Row 1 -->
+      <div class="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 gap-6 col-span-3">
+        <!-- Service 1 -->
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-house fa-2x text-[#84BF34]"></i>
+          <div>
+            <h3 class="font-bold text-lg text-[#84BF34]">Home Moves</h3>
+            <p class="text-gray-600 text-sm">
+              Moving your home can be daunting but not so much when our team
+              is here to help you pack, load, and transport your belongings to
+              your new home.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-briefcase fa-2x text-[#84BF34]"></i>
+          <div>
+            <h3 class="font-bold text-lg text-[#84BF34]">Office Moves</h3>
+            <p class="text-gray-600 text-sm">
+              Our office moves are designed to ensure a smooth move while
+              minimising downtime. So, no more letting your move disrupt your
+              business.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-route fa-2x text-[#84BF34]"></i>
+          <div>
+            <h3 class="font-bold text-lg text-[#84BF34]">Interstate Moves</h3>
+            <p class="text-gray-600 text-sm">
+              If you're relocating to another state, avail the assistance of
+              our Melbourne City movers and take care of your long-distance
+              moves efficiently.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-couch fa-2x text-[#84BF34]"></i>
+          <div>
+            <h3 class="font-bold text-lg text-[#84BF34]">Furniture Moves</h3>
+            <p class="text-gray-600 text-sm">
+              Whether you're relocating a single piece or an entire
+              household's furniture, we handle everything with care.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-trash-alt fa-2x text-[#84BF34]"></i>
+          <div>
+            <h3 class="font-bold text-lg text-[#84BF34]">Rubbish Moves</h3>
+            <p class="text-gray-600 text-sm">
+              We remove waste and unwanted clutter from your space promptly
+              and responsibly.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-box-open fa-2x text-[#84BF34]"></i>
+          <div>
+            <h3 class="font-bold text-lg text-[#84BF34]">Packing Services</h3>
+            <p class="text-gray-600 text-sm">
+              We offer top-notch packing services to ensure the safety of your
+              items during the move.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Right Column (Image) -->
+      <div class="col-span-2">
+        <img src="images/pcm-images/s1.webp" alt="City Image" class="rounded-[30px] w-full shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#53565a] text-white py-12 md:pb-12 pb-[400px] relative overflow-hidden">
+    <!-- Left Mover -->
+    <img src="images/pcm-images/pt.webp" alt="Mover Left"
+      class="absolute bottom-0 left-0 md:block hidden h-full max-w-xs object-contain z-10" />
+
+    <!-- Right Mover -->
+    <img src="images/pcm-images/pt2.webp" alt="Mover Right"
+      class="absolute -bottom-[300px] right-[%] md:right-0 md:bottom-0 h-full max-w-xs object-contain z-10" />
+
+    <!-- Content Container -->
+    <div class="relative z-20 max-w-6xl mx-auto px-6 text-center">
+      <!-- Stats -->
+      <div class="flex flex-col sm:flex-row justify-center gap-10 mb-8">
+        <div>
+          <p class="text-3xl font-bold">100+</p>
+          <p class="text-sm mt-1">Moving Trucks in Perth</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold">10,000+</p>
+          <p class="text-sm mt-1">Moves Completed Successfully</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold">100+</p>
+          <p class="text-sm mt-1">Staff in Perth</p>
+        </div>
+      </div>
+      <hr class="border-white opacity-30 my-6 max-w-lg mx-auto" />
+      <!-- Updated Headline -->
+      <h2 class="text-2xl sm:text-3xl font-semibold">
+        Perth’s Trusted & Efficient Removalists – <br />
+        <span class="font-bold">Perth Central Movers</span>
+      </h2>
+
+      <!-- CTA Buttons -->
+      <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <button onclick="createModal()"
+          class="bg-[#84BF34] text-white font-semibold px-6 py-3 rounded-md hover:bg-gray-200">
+          Request Call Back
+        </button>
+        <a href="tel:1300163694"
+          class="bg-white text-[#84BF34] font-semibold px-6 py-3 rounded-md flex items-center gap-2 hover:bg-gray-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h2.28a2 2 0 011.79 1.11l1.12 2.23a2 2 0 01-.45 2.32l-1.27 1.27a16.02 16.02 0 006.58 6.58l1.27-1.27a2 2 0 012.32-.45l2.23 1.12A2 2 0 0121 18.72V21a2 2 0 01-2 2h-1C9.61 23 3 16.39 3 8V7a2 2 0 012-2z" />
+          </svg>
+          1300163694
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/what_make_best.js"></script>
+
+  <div class="flex flex-col md:flex-row gap-8 p-8 text-white font-semibold bg-[#84BF34]">
+    <!-- FAQ Section -->
+    <div class="w-full md:w-1/2">
+      <h2 class="text-3xl font-bold mb-2">FAQ’s</h2>
+      <p class="mb-6 text-sm">
+        Moving soon? Here at The PCM we understand that you might have some
+        moving questions when preparing for your upcoming relocation. Here are
+        some of our most frequently asked questions (FAQ’s) by our customers.
+      </p>
+
+      <div class="space-y-3" id="faq-container">
+        <!-- FAQs will be injected here -->
+      </div>
+
+      <button
+        class="mt-6 bg-gray-700 text-white px-6 py-3 text-lg font-semibold flex items-center gap-2 hover:bg-gray-800">
+        Ask your question
+        <span class="bg-[#84BF34] px-2 py-1 rounded-r text-gray-800 font-bold text-xl">&gt;&gt;</span>
+      </button>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="w-full md:w-1/2 bg-gray-800 text-white p-6 rounded-lg border border-[#84BF34]">
+      <h3 class="text-xl font-bold text-[#84BF34] mb-2">
+        Request a Call Back
+      </h3>
+      <p class="text-sm mb-6 text-gray-300">
+        For further more queries, you can contact us anytime via our official
+        web portal.
+      </p>
+      <form class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Your full Name"
+            class="p-2 bg-gray-700 border border-[#84BF34] rounded outline-none focus:ring-2 focus:ring-[#84BF34]" />
+          <input type="text" placeholder="Phone Number"
+            class="p-2 bg-gray-700 border border-[#84BF34] rounded outline-none focus:ring-2 focus:ring-[#84BF34]" />
+          <input type="email" placeholder="Your Email"
+            class="p-2 bg-gray-700 border border-[#84BF34] rounded outline-none focus:ring-2 focus:ring-[#84BF34]" />
+          <input type="text" placeholder="mm/dd/yyyy"
+            class="p-2 bg-gray-700 border border-[#84BF34] rounded outline-none focus:ring-2 focus:ring-[#84BF34]" />
+          <input type="text" placeholder="Moving from?"
+            class="p-2 bg-gray-700 border border-[#84BF34] rounded outline-none focus:ring-2 focus:ring-[#84BF34]" />
+          <input type="text" placeholder="Moving to?"
+            class="p-2 bg-gray-700 border border-[#84BF34] rounded outline-none focus:ring-2 focus:ring-[#84BF34]" />
+        </div>
+        <textarea placeholder="Your Message" rows="4"
+          class="w-full p-2 bg-gray-700 border border-[#84BF34] rounded outline-none focus:ring-2 focus:ring-[#84BF34]"></textarea>
+        <button type="submit" class="bg-[#84BF34] text-gray-800 font-semibold px-6 py-2 rounded hover:bg-[#84BF34]">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Right Map -->
+  <div class="w-full">
+    <div class="w-full">
+      <div class="h-64 sm:h-80 lg:h-96 w-full bg-gray-200 rounded-lg overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21334.384591073434!2d144.97006210031554!3d-37.81948110690009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b33e2a76c3%3A0x51ec3d26a25683d3!2s12%20Queen%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e1!3m2!1sen!2sin!4v1752769798927!5m2!1sen!2sin"
+          width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/googlemap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRwtGvywDWGOX4ULNCXZNxFiW-Qutu9Bc&libraries=places"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../../slider.js"></script>
+  <script src="js/why.js"></script>
+  <script src="js/faq.js"></script>
+</body>
+
+</html>
